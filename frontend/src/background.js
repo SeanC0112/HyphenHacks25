@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
-import BIRDS from 'vanta/dist/vanta.birds.min';
+import GLOBE from 'vanta/dist/vanta.globe.min';
 
 function Background() {
   const vantaRef = useRef(null);
@@ -8,7 +8,7 @@ function Background() {
 
   useEffect(() => {
     if (vantaRef.current && !vantaEffect.current) {
-      vantaEffect.current = BIRDS({
+      vantaEffect.current = GLOBE({
         el: vantaRef.current,
         THREE: THREE,
         mouseControls: true,
@@ -19,14 +19,8 @@ function Background() {
         scale: 1.00,
         scaleMobile: 1.00,
         backgroundColor: 0x141312,
-        color1: 0xf77400,
-        color2: 0xffae26,
-        colorMode: "lerpGradient",
-        birdSize: 1.50,
-        wingSpan: 37.00,
-        speedLimit: 6.00,
-        separation: 35.00,
-        alignment: 18.00
+        color: 0xf77400,
+        color2: 0xffae26
       });
     }
     return () => {

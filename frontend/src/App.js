@@ -10,6 +10,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
+      <div className="App-intro">
+      <h1 className="App-title">Hyphen-Hacks 2025</h1>
+      </div>
     </div>
   );
 }
