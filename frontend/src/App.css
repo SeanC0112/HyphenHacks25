@@ -24,8 +24,9 @@
 
 .App-title {
   font-family: 'Didot', serif;
-  font-size: 1.5rem;
+  font-size: 12vw;
   font-weight: bold;
   color: #E4A039;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 

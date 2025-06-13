@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import GLOBE from 'vanta/dist/vanta.globe.min';
 
+// had to import vanta release 0.5.24 and three release 0.121.0
+
 function Background() {
   const vantaRef = useRef(null);
   const vantaEffect = useRef(null);
