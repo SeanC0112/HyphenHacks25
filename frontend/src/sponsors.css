@@ -1,0 +1,41 @@
+.sponsors {
+    padding: 5vmin;
+    font-family: "Offside", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(20, 19, 18, 0.9);
+    color: white
+}
+
+.gold-sponsor-tier-title {
+    background-image: linear-gradient(0.25turn,#e2aa39, #D78D1D);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;        /* Add this for Safari/Chrome */
+    -webkit-text-fill-color: transparent; /* Add this for Safari/Chrome */
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0 0 2vh #E4A039);
+}
+
+.silver-sponsor-tier-title {
+    background-image: linear-gradient(0.25turn,#C0C0C0, #A9A9A9);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;        /* Add this for Safari/Chrome */
+    -webkit-text-fill-color: transparent; /* Add this for Safari/Chrome */
+    position: relative;
+    z-index: 1;
+    /* filter: drop-shadow(0 0 1vh #C0C0C0); */
+}
+
+.bronze-sponsor-tier-title {
+    background-image: linear-gradient(0.25turn,#cd7f32, #b87333);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;        /* Add this for Safari/Chrome */
+    -webkit-text-fill-color: transparent; /* Add this for Safari/Chrome */
+    position: relative;
+    z-index: 1;
+    /* filter: drop-shadow(0 0 0.2vh #cd7f32); */
+}

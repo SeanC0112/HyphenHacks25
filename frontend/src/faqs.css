@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Offside&display=swap');
+
 .FAQs {
     padding: 5vmin;
+    font-family: "Offside", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     background-color: rgba(20, 19, 18, 0.9);
     color: white
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Offside&display=swap');
 
 .faq-question {
     cursor: pointer;
