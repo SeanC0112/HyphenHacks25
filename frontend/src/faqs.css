@@ -4,6 +4,8 @@
     color: white
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Offside&display=swap');
+
 .faq-question {
     cursor: pointer;
 }
