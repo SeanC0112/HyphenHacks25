@@ -14,12 +14,14 @@ function App() {
       <Background />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <button className='App-button' onClick={() => faqRef.current?.scrollIntoView({ behavior: 'smooth' })}>
-          FAQs
-        </button>
-        <button className='App-button' onClick={() => sponsorRef.current?.scrollIntoView({ behavior: 'smooth' })}>
-          Sponsors
-        </button>
+        <div className="App-header-buttons">
+          <button className='App-button' onClick={() => faqRef.current?.scrollIntoView({ behavior: 'smooth' })}>
+            FAQs
+          </button>
+          <button className='App-button' onClick={() => sponsorRef.current?.scrollIntoView({ behavior: 'smooth' })}>
+            Sponsors
+          </button>
+        </div>
       </header>
       <div className="App-intro title-row">
         <h1 className="App-title-top">Hyphen</h1>
