@@ -11,8 +11,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
-      <div className="App-intro">
-      <h1 className="App-title">Hyphen-Hacks 2025</h1>
+      <div className="App-intro title-row">
+        <h1 className="App-title">Hyphen</h1>
+        <h1 className="App-hyphen">-</h1>
+        <h1 className="App-title">Hacks</h1>
       </div>
       <FAQs />
       <div className="App-footer">
