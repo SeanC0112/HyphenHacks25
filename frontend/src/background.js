@@ -21,7 +21,7 @@ function Background() {
         scale: 1.00,
         scaleMobile: 1.00,
         backgroundColor: 0x141312,
-        color: 0xf77400,
+        color: 0xff871f,
         color2: 0xffae26
       });
     }
