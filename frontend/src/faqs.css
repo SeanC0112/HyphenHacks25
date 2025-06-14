@@ -3,3 +3,7 @@
     background-color: rgba(20, 19, 18, 0.9);
     color: white
 }
+
+.faq-question {
+    cursor: pointer;
+}
