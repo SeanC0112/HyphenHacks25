@@ -12,9 +12,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
       <div className="App-intro title-row">
-        <h1 className="App-title">Hyphen</h1>
+        <h1 className="App-title-top">Hyphen</h1>
         <h1 className="App-hyphen">-</h1>
-        <h1 className="App-title">Hacks</h1>
+        <h1 className="App-title-bottom">Hacks</h1>
       </div>
       <FAQs />
       <div className="App-footer">
