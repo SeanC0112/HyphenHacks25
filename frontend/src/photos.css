@@ -1,3 +1,8 @@
 .photos {
-    font-family: 'Raleway', sans-serif;
+    padding: 5vmin;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #131313;
+    color: white
 }
