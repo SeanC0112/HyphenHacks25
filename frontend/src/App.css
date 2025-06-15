@@ -128,6 +128,12 @@
   filter: drop-shadow(0 0 2vh #E4A039);
 }
 
+.App-gradient {
+  background: linear-gradient(180deg, #141312, #131313);
+  height: 1vh; /* Adjusted height for a thinner line */
+  width: 100%;
+  margin: 0 auto; /* Center the gradient line */
+}
 
 .App-footer {
   background-color: rgba(0, 0, 0, 0.75);

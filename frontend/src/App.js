@@ -33,6 +33,7 @@ function App() {
         <h1 className="App-hyphen">-</h1>
         <h1 className="App-title-bottom">Hacks</h1>
       </div>
+      <div className='App-gradient'></div>
       <Agenda ref={agendaRef} />
       <FAQs ref={faqRef} />
       <Sponsors ref={sponsorRef} />
