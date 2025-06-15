@@ -8,6 +8,7 @@ import Photos from './photos';
 import FAQs from './faqs';
 import Sponsors from './sponsors';
 import Organizers from './organizers';
+import About from './about';
 
 function App() {
   const faqRef = useRef(null);
@@ -15,6 +16,7 @@ function App() {
   const agendaRef = useRef(null);
   const judgesRef = useRef(null);
   const organizersRef = useRef(null);
+  const aboutRef = useRef(null);
 
   return (
     <div className="App">
@@ -22,6 +24,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <div className="App-header-buttons">
+          <button className='App-button' onClick={() => aboutRef.current?.scrollIntoView({ behavior: 'smooth' })}>
+            About
+          </button>
           <button className='App-button' onClick={() => agendaRef.current?.scrollIntoView({ behavior: 'smooth' })}>
             Agenda
           </button>
@@ -45,6 +50,7 @@ function App() {
         <h1 className="App-title-bottom">Hacks</h1>
       </div>
       <div className='App-gradient'></div>
+      <About ref={aboutRef} />
       <Agenda ref={agendaRef} />
       <FAQs ref={faqRef} />
       <Photos />
