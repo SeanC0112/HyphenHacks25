@@ -8,6 +8,8 @@
   pointer-events: none;
   margin-left: 16px;      /* Add spacing to the right of the logo */
   opacity: 1;
+  /* background-color: #2F4858;
+  color: white; */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Exo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
