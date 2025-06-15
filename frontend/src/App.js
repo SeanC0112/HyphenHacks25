@@ -2,12 +2,14 @@ import './App.css';
 import React, { useRef } from 'react';
 import Background from './background';
 import logo from './logo.svg';
+import Agenda from './agenda';
 import FAQs from './faqs';
 import Sponsors from './sponsors';
 
 function App() {
   const faqRef = useRef(null);
   const sponsorRef = useRef(null);
+  const agendaRef = useRef(null);
 
   return (
     <div className="App">
@@ -15,6 +17,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <div className="App-header-buttons">
+          <button className='App-button' onClick={() => agendaRef.current?.scrollIntoView({ behavior: 'smooth' })}>
+            Agenda
+          </button>
           <button className='App-button' onClick={() => faqRef.current?.scrollIntoView({ behavior: 'smooth' })}>
             FAQs
           </button>
@@ -28,6 +33,7 @@ function App() {
         <h1 className="App-hyphen">-</h1>
         <h1 className="App-title-bottom">Hacks</h1>
       </div>
+      <Agenda ref={agendaRef} />
       <FAQs ref={faqRef} />
       <Sponsors ref={sponsorRef} />
       <div className="App-footer">
