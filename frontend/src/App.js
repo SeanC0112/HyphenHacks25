@@ -7,12 +7,14 @@ import Judges from './judges';
 import Photos from './photos';
 import FAQs from './faqs';
 import Sponsors from './sponsors';
+import Organizers from './organizers';
 
 function App() {
   const faqRef = useRef(null);
   const sponsorRef = useRef(null);
   const agendaRef = useRef(null);
   const judgesRef = useRef(null);
+  const organizersRef = useRef(null);
 
   return (
     <div className="App">
@@ -32,6 +34,9 @@ function App() {
           <button className='App-button' onClick={() => sponsorRef.current?.scrollIntoView({ behavior: 'smooth' })}>
             Sponsors
           </button>
+          <button className='App-button' onClick={() => organizersRef.current?.scrollIntoView({ behavior: 'smooth' })}>
+            Organizers
+          </button>
         </div>
       </header>
       <div className="App-intro title-row">
@@ -45,6 +50,7 @@ function App() {
       <Photos />
       <Judges ref={judgesRef} />
       <Sponsors ref={sponsorRef} />
+      <Organizers ref={organizersRef} />
       <div className="App-footer">
         <span className="footer-left">Made with ❤️ by the Hyphen-Hacks Team</span>
         <span className="footer-right">© 2025 Hyphen-Hacks</span>
