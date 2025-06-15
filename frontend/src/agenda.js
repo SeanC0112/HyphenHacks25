@@ -24,24 +24,28 @@ const Items = [
         title: "Team Formation",
     },
     {
-        time: "12:00 PM",
-        title: "Lunch Break",
+        time: "10:15 AM",
+        title: "Hacking Begins!",
     },
     {
-        time: "1:00 PM",
-        title: "Workshops Begin",
+        time: "12:15 PM",
+        title: "Lunch",
     },
     {
-        time: "5:00 PM",
-        title: "Dinner Break",
+        time: "6:30 PM",
+        title: "Dinner",
     },
     {
-        time: "6:00 PM",
-        title: "Hackathon Begins",
+        time: "9:00 PM",
+        title: "Presentations and Judging",
     },
     {
-        time: "8:00 PM",
-        title: "Evening Activities",
+        time: "10:30 PM",
+        title: "Closing Ceremony",
+    },
+    {        
+        time: "11:00 PM",
+        title: "Departure",
     }
 ]
 
