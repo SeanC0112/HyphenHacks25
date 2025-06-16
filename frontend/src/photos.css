@@ -23,6 +23,7 @@
   scrollbar-width: none; /* Firefox */
   overflow-x: auto;
   overflow-y: visible;
+  pointer-events: none;
 }
 .photo-row::-webkit-scrollbar {
   display: none; /* Chrome/Safari */

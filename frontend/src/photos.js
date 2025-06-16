@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import './photos.css';
 
 let numPhotos = 11;
@@ -8,6 +8,7 @@ for(let i = 0; i < numPhotos; i++) {
 }
 
 function Photos() {
+  const [scrolling, setScrolling] = React.useState(true);
   const rowRef = useRef(null);
 
   // Duplicate the photoList 3 times for seamless looping
@@ -58,7 +59,7 @@ function Photos() {
 
     // Auto-scroll interval
     const autoScroll = setInterval(() => {
-      row.scrollLeft += 1; // Adjust speed by changing this value
+      if(scrolling) row.scrollLeft += 1; // Adjust speed by changing this value
     }, 16); // ~60fps
 
     return () => {
@@ -67,8 +68,41 @@ function Photos() {
     };
   }, []);
 
+  let scrollTimeout = setTimeout(() => {
+    setScrolling(true);
+  }, 5000); // start auto-scrolling after 5 seconds
+
+  const leftClick = () => {
+    setScrolling(false);
+    const row = rowRef.current;
+    clearTimeout(scrollTimeout);
+
+    scrollTimeout = setTimeout(() => {
+        setScrolling(true);
+    }, 5000);
+  }
+
+  const rightClick = () => {
+    clearTimeout(scrollTimeout);
+    setScrolling(false);
+    const row = rowRef.current;
+    console.log("right click", scrolling);
+
+    scrollTimeout = setTimeout(() => {
+        setScrolling(true);
+    }, 5000);
+  }
+
   return (
     <div className="photos">
+        <div className="arrow-buttons">
+            <button className="left-button" onClick={leftClick}>
+                <span className="arrow">&lt;</span>
+            </button>
+            <button className="right-button" onClick={rightClick}>
+                <span className="arrow">&gt;</span>
+            </button>
+        </div>
       <div className="photo-row" ref={rowRef}>
         {displayList.map((src, idx) => (
           <img
