@@ -9,7 +9,14 @@ for(let i = 0; i < numPhotos; i++) {
 
 function Photos() {
   const [scrolling, setScrolling] = React.useState(true);
+  const scrollingRef = useRef(scrolling);
   const rowRef = useRef(null);
+  const scrollTimeoutRef = useRef(null);
+
+  // Keep ref in sync with state
+  useEffect(() => {
+    scrollingRef.current = scrolling;
+  }, [scrolling]);
 
   // Duplicate the photoList 3 times for seamless looping
   const displayList = [...photoList, ...photoList, ...photoList];
@@ -59,7 +66,7 @@ function Photos() {
 
     // Auto-scroll interval
     const autoScroll = setInterval(() => {
-      if(scrolling) row.scrollLeft += 1; // Adjust speed by changing this value
+      if (scrollingRef.current) row.scrollLeft += 1; // Adjust speed by changing this value
     }, 16); // ~60fps
 
     return () => {
@@ -68,30 +75,23 @@ function Photos() {
     };
   }, []);
 
-  let scrollTimeout = setTimeout(() => {
-    setScrolling(true);
-  }, 5000); // start auto-scrolling after 5 seconds
-
   const leftClick = () => {
     setScrolling(false);
     const row = rowRef.current;
-    clearTimeout(scrollTimeout);
-
-    scrollTimeout = setTimeout(() => {
-        setScrolling(true);
+    if (scrollTimeoutRef.current) clearTimeout(scrollTimeoutRef.current);
+    scrollTimeoutRef.current = setTimeout(() => {
+      setScrolling(true);
     }, 5000);
-  }
+  };
 
   const rightClick = () => {
-    clearTimeout(scrollTimeout);
     setScrolling(false);
     const row = rowRef.current;
-    console.log("right click", scrolling);
-
-    scrollTimeout = setTimeout(() => {
-        setScrolling(true);
+    if (scrollTimeoutRef.current) clearTimeout(scrollTimeoutRef.current);
+    scrollTimeoutRef.current = setTimeout(() => {
+      setScrolling(true);
     }, 5000);
-  }
+  };
 
   return (
     <div className="photos">
