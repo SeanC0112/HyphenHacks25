@@ -4,5 +4,55 @@
     font-weight: 400;
     font-style: normal;
     background-color: #131313;
-    color: white
+    color: white;
+    overflow: visible; /* <-- allow shadow to overflow */
+}
+
+.photo-wheel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.photo-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  padding: 2vw 0;
+  scrollbar-width: none; /* Firefox */
+  overflow-x: auto;
+  overflow-y: visible;
+}
+.photo-row::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.photo-img {
+  max-width: 60vw;
+  max-height: 40vh;
+  border-radius: 1vw; /* rounded corners */
+  box-shadow: 0 0 20px #0008;
+  /* drop-shadow will follow the border-radius */
+}
+
+.photo-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.4s;
+  filter: drop-shadow(0 0 0.5vh #E4A039);
+  /* overflow: visible; */
+}
+
+.photo-arrow {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 3vw;
+  cursor: pointer;
+  user-select: none;
+  padding: 0 1vw;
+  transition: color 0.2s;
+}
+.photo-arrow:hover {
+  color: #e2aa39;
 }
