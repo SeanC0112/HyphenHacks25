@@ -8,15 +8,38 @@ for(let i = 0; i < numPhotos; i++) {
 }
 
 function Photos() {
-  const [scrolling, setScrolling] = React.useState(true);
-  const scrollingRef = useRef(scrolling);
+  const [imgWidths, setImgWidths] = useState([]);
+  const scrollingRef = useRef(true);
   const rowRef = useRef(null);
   const scrollTimeoutRef = useRef(null);
+  const currImgRef = useRef(null);
+  const imgRefs = useRef([]);
 
-  // Keep ref in sync with state
+  // Update refs for each image
+  const setImgRef = (el, idx) => {
+    imgRefs.current[idx] = el;
+  };
+
+  // Function to update widths
+  const updateWidths = () => {
+    let temp = imgRefs.current.map(img => img ? img.offsetWidth : 0);
+    for(let i = 1; i < imgRefs.current.length; i++) {
+        temp[i] = temp[i - 1] + window.innerWidth / 50 + imgRefs.current[i].offsetWidth;
+    };
+    for (let i = 0; i < imgRefs.current.length; i++) {
+        temp[i] -= imgRefs.current[i].offsetWidth / 2;
+    }
+    setImgWidths(temp);
+  };
+
   useEffect(() => {
-    scrollingRef.current = scrolling;
-  }, [scrolling]);
+    updateWidths();
+    window.addEventListener('resize', updateWidths);
+
+    return () => {
+      window.removeEventListener('resize', updateWidths);
+    };
+  }, []);
 
   // Duplicate the photoList 3 times for seamless looping
   const displayList = [...photoList, ...photoList, ...photoList];
@@ -50,12 +73,20 @@ function Photos() {
     const handleScroll = () => {
       if (isJumping) return;
       const singleListWidth = row.scrollWidth / 3;
+
+      for (let i = 0; i < imgWidths.length; i++) {
+        if (row.scrollLeft + singleListWidth >= imgWidths[i] && row.scrollLeft < imgWidths[i + 1]) {
+          // If the scroll position is within the bounds of an image, adjust it
+          currImgRef.current = i;
+          break;
+        }
+      }
       // Use a small buffer to avoid flicker
-      if (row.scrollLeft < singleListWidth * 0.05) {
+      if (row.scrollLeft < singleListWidth) {
         isJumping = true;
         row.scrollLeft += singleListWidth;
         setTimeout(() => { isJumping = false; }, 0);
-      } else if (row.scrollLeft > singleListWidth * 1.95) {
+      } else if (row.scrollLeft > singleListWidth * 2) {
         isJumping = true;
         row.scrollLeft -= singleListWidth;
         setTimeout(() => { isJumping = false; }, 0);
@@ -76,20 +107,33 @@ function Photos() {
   }, []);
 
   const leftClick = () => {
-    setScrolling(false);
+    scrollingRef.current = false;
     const row = rowRef.current;
     if (scrollTimeoutRef.current) clearTimeout(scrollTimeoutRef.current);
+    if (currImgRef.current === null) {
+      currImgRef.current = 0;
+    }
+    if(row.scrollLeft === imgWidths[currImgRef.current] + row.scrollWidth / 3) {
+        currImgRef.current = (currImgRef.current - 1) % imgWidths.length;
+    }
+    while (row.scrollLeft !== imgWidths[currImgRef.current]+ row.scrollWidth / 3) {
+      row.scrollLeft -= 1; // Adjust speed by changing this value
+    }
     scrollTimeoutRef.current = setTimeout(() => {
-      setScrolling(true);
+      scrollingRef.current = true;
     }, 5000);
   };
 
   const rightClick = () => {
-    setScrolling(false);
+    scrollingRef.current = false;
     const row = rowRef.current;
     if (scrollTimeoutRef.current) clearTimeout(scrollTimeoutRef.current);
+    currImgRef.current = (currImgRef.current + 1) % imgWidths.length;
+    while (row.scrollLeft !== imgWidths[currImgRef.current]+ row.scrollWidth / 3) {
+      row.scrollLeft += 1; // Adjust speed by changing this value
+    }
     scrollTimeoutRef.current = setTimeout(() => {
-      setScrolling(true);
+      scrollingRef.current = true;
     }, 5000);
   };
 
@@ -111,9 +155,13 @@ function Photos() {
             alt={`Photo ${idx % photoList.length + 1}`}
             className="photo-img"
             draggable={false}
+            ref={el => setImgRef(el, idx)}
+            onLoad={updateWidths}
           />
         ))}
       </div>
+      {/* For debugging: */}
+      {/* <pre>{JSON.stringify(imgWidths, null, 2)}</pre> */}
     </div>
   );
 }
