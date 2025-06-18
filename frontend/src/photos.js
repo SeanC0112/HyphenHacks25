@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState, use } from "react";
 import './photos.css';
 
-// TODO: really important the whole thing is referencing the image to the far left and everything is referencing the far left rather than the middle. I need to rememet that and fix it!
+// edge case of two ms brooks photos where when u get there twice it starts flipping out between her and avi
 
 let numPhotos = 11;
 const photoList = [];
@@ -58,8 +58,6 @@ function Photos() {
     const row = rowRef.current;
     if (!row) return;
 
-    let half = window.innerWidth / 2;
-
     // Wait for images to load before setting scroll position
     const handleImagesLoaded = () => {
       const singleListWidth = row.scrollWidth / 3;
@@ -83,22 +81,30 @@ function Photos() {
 
     let isJumping = false;
     const handleScroll = () => {
-      if (isJumping) return;
       const singleListWidth = row.scrollWidth / 3;
-      // console.log(imgWidthRef.current, "hi");
-      for (let i = 0; i < imgWidthRef.current.length; i++) {
+      let half = window.innerWidth / 2;
+
+      let change = false;
+      for (let i = 0; i < imgWidthRef.current.length-1; i++) {
         if (row.scrollLeft - singleListWidth+half >= imgWidthRef.current[i] && row.scrollLeft - singleListWidth+half < imgWidthRef.current[i + 1]) {
           // If the scroll position is within the bounds of an image, adjust it
           currImgRef.current = i;
+          change = true;
           break;
-        }
+        } 
       }
+      if (!change) {
+        currImgRef.current = imgWidthRef.current.length-1
+      }
+
+      if (isJumping) return;
+      // console.log(imgWidthRef.current, "hi");
       // Use a small buffer to avoid flicker
       if (row.scrollLeft < singleListWidth-half) {
         isJumping = true;
         row.scrollLeft += singleListWidth;
         setTimeout(() => { isJumping = false; }, 0);
-      } else if (row.scrollLeft > singleListWidth * 2-half) {
+      } else if (row.scrollLeft >= singleListWidth * 2-half) {
         isJumping = true;
         row.scrollLeft -= singleListWidth;
         setTimeout(() => { isJumping = false; }, 0);
@@ -153,15 +159,22 @@ function Photos() {
     function step() {
       clearTimeout(scrollTimeoutRef.current);
       const diff = target - row.scrollLeft;
-      if (Math.abs(diff) < speed) {
-        row.scrollLeft = target;
-        scrollTimeoutRef.current = setTimeout(() => {
-          scrollingRef.current = true;
+      for(let i = 0; i < speed; i++) {
+        if (row.scrollLeft = target) {
+          scrollTimeoutRef.current = setTimeout(() => {
+            scrollingRef.current = true;
+          }
+          , 5000);
+          return;
         }
-        , 5000);
-        return;
+        row.scrollLeft += diff > 0 ? 1 : -1;
+        if (row.scrollLeft < row.scrollWidth/3-window.innerWidth/2) {
+          row.scrollLeft += row.scrollWidth/3;
+        } else if (row.scrollLeft > row.scrollWidth/3 * 2-window.innerWidth/2) {
+          row.scrollLeft -= row.scrollWidth/3;
+        }
+
       }
-      row.scrollLeft += diff > 0 ? speed : -speed;
       requestAnimationFrame(step);
     }
     requestAnimationFrame(step);
