@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, use } from "react";
 import './photos.css';
 
 // TODO: really important the whole thing is referencing the image to the far left and everything is referencing the far left rather than the middle. I need to rememet that and fix it!
@@ -16,6 +16,7 @@ function Photos() {
   const scrollTimeoutRef = useRef(null);
   const currImgRef = useRef(null);
   const imgRefs = useRef([]);
+  const imgWidthRef = useRef([]);
 
   // Update refs for each image
   const setImgRef = (el, idx) => {
@@ -31,11 +32,15 @@ function Photos() {
     };
     for (let i = 0; i < imgRefs.current.length; i++) {
         temp[i] -= imgRefs.current[i].offsetWidth / 2;
+        temp[i] = Math.round(temp[i]);
     }
     setImgWidths(temp);
-    console.log(temp);
-    console.log(rowRef.current.scrollWidth);
+    console.log(imgWidths)
   };
+
+  useEffect(() => {
+    imgWidthRef.current = imgWidths;
+  }, [imgWidths]);
 
   useEffect(() => {
     updateWidths();
@@ -80,9 +85,9 @@ function Photos() {
     const handleScroll = () => {
       if (isJumping) return;
       const singleListWidth = row.scrollWidth / 3;
-
-      for (let i = 0; i < imgWidths.length; i++) {
-        if (row.scrollLeft + singleListWidth-half >= imgWidths[i] && row.scrollLeft + singleListWidth-half < imgWidths[i + 1]) {
+      // console.log(imgWidthRef.current, "hi");
+      for (let i = 0; i < imgWidthRef.current.length; i++) {
+        if (row.scrollLeft - singleListWidth+half >= imgWidthRef.current[i] && row.scrollLeft - singleListWidth+half < imgWidthRef.current[i + 1]) {
           // If the scroll position is within the bounds of an image, adjust it
           currImgRef.current = i;
           break;
