@@ -84,17 +84,19 @@ function Photos() {
       const singleListWidth = row.scrollWidth / 3;
       let half = window.innerWidth / 2;
 
-      let change = false;
-      for (let i = 0; i < imgWidthRef.current.length-1; i++) {
-        if (row.scrollLeft - singleListWidth+half >= imgWidthRef.current[i] && row.scrollLeft - singleListWidth+half < imgWidthRef.current[i + 1]) {
-          // If the scroll position is within the bounds of an image, adjust it
-          currImgRef.current = i;
-          change = true;
-          break;
-        } 
-      }
-      if (!change) {
-        currImgRef.current = imgWidthRef.current.length-1
+
+      if(scrollingRef) {
+        let change = false;
+        for (let i = 0; i < imgWidthRef.current.length-1; i++) {
+          if (row.scrollLeft - singleListWidth+half >= imgWidthRef.current[i]-1 && row.scrollLeft - singleListWidth+half < imgWidthRef.current[i + 1]) {
+            currImgRef.current = i;
+            change = true;
+            break;
+          } 
+        }
+        if (!change) {
+          currImgRef.current = imgWidthRef.current.length-1
+        }
       }
 
       if (isJumping) return;
@@ -143,7 +145,9 @@ function Photos() {
     scrollingRef.current = false;
     const row = rowRef.current;
     if (scrollTimeoutRef.current) clearTimeout(scrollTimeoutRef.current);
+    console.log(currImgRef, imgWidths[currImgRef.current] + row.scrollWidth/3-window.innerWidth/2, row.scrollLeft)
     currImgRef.current = (currImgRef.current + 1) % imgWidths.length;
+    console.log(currImgRef.current)
     const target = imgWidths[currImgRef.current] + row.scrollWidth / 3 - window.innerWidth / 2;
     smoothScrollTo(target);
     scrollTimeoutRef.current = setTimeout(() => {
