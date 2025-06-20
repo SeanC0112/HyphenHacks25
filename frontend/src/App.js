@@ -39,9 +39,9 @@ function App() {
           <button className='App-button' onClick={() => sponsorRef.current?.scrollIntoView({ behavior: 'smooth' })}>
             Sponsors
           </button>
-          <button className='App-button' onClick={() => organizersRef.current?.scrollIntoView({ behavior: 'smooth' })}>
+          {/* <button className='App-button' onClick={() => organizersRef.current?.scrollIntoView({ behavior: 'smooth' })}>
             Organizers
-          </button>
+          </button>  dont need that much free self promo*/}
         </div>
       </header>
       <div className="App-intro title-row">
@@ -50,13 +50,15 @@ function App() {
         <h1 className="App-title-bottom">Hacks</h1>
       </div>
       <div className='App-gradient'></div>
-      <About ref={aboutRef} />
-      <Agenda ref={agendaRef} />
-      <FAQs ref={faqRef} />
-      <Photos />
-      <Judges ref={judgesRef} />
-      <Sponsors ref={sponsorRef} />
-      <Organizers ref={organizersRef} />
+      <div className='App-info'>
+        <About ref={aboutRef} />
+        <Agenda ref={agendaRef} />
+        <FAQs ref={faqRef} />
+        <Photos />
+        <Judges ref={judgesRef} />
+        <Sponsors ref={sponsorRef} />
+        <Organizers ref={organizersRef} />
+      </div>
       <div className="App-footer">
         <span className="footer-left">Made with ❤️ by the Hyphen-Hacks Team</span>
         <span className="footer-right">© 2025 Hyphen-Hacks</span>

@@ -1,7 +1,68 @@
 .agenda {
+    padding: 5vmin;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-style: normal;
     background-color: #131313;
     color: white;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.agenda-header {
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5vmin;
+    background-image: linear-gradient(0.25turn,#ffffff, #DDDDDD);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 1;
+    line-height: 1;
+    margin-bottom: 2.5vmin;
+    text-align: center;
+}
+
+.agenda-list {
+    position: relative;
+    margin: 0;
+    padding: 0 0 0 30px;
+    border-left: 3px solid #ffae26;
+}
+
+.agenda-item {
+    position: relative;
+    margin-bottom: 2.5vmin;
+    padding-left: 1.5em;
+}
+
+.agenda-item::before {
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 0.6em;
+    width: 18px;
+    height: 18px;
+    background: #ffae26;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 4px #131313;
+}
+
+.agenda-time {
+    display: block;
+    font-weight: 700;
+    color: #ffae26;
+    font-size: 1.2em;
+    margin-bottom: 0.2em;
+}
+
+.agenda-title {
+    display: block;
+    font-size: 1.1em;
+    color: #fff;
+    letter-spacing: 0.02em;
 }

@@ -51,10 +51,13 @@ const Items = [
 
 const Agenda = React.forwardRef((props, ref) => (
     <div className="agenda" ref={ref}>
-        {Items.map((item, index) => (
-            <AgendaItem key={index} item={item} />
-        ))}
+        <h1 className="agenda-header">Agenda</h1>
+        <div className="agenda-list">
+            {Items.map((item, index) => (
+                <AgendaItem key={index} item={item} />
+            ))}
+        </div>
     </div>
-))
+));
 
 export default Agenda;
