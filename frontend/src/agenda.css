@@ -27,42 +27,44 @@
 }
 
 .agenda-list {
-    position: relative;
-    margin: 0;
-    padding: 0 0 0 30px;
-    border-left: 3px solid #ffae26;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2vmin;
 }
 
 .agenda-item {
-    position: relative;
-    margin-bottom: 2.5vmin;
-    padding-left: 1.5em;
-}
-
-.agenda-item::before {
-    content: '';
-    position: absolute;
-    left: -33px;
-    top: 0.6em;
-    width: 18px;
-    height: 18px;
-    background: #ffae26;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    box-shadow: 0 0 0 4px #131313;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    background: rgba(255,255,255,0.04);
+    border-radius: 1vw;
+    padding: 2vmin 2.5vmin;
+    font-size: 1.5em;
+    box-shadow: 0 2px 8px #0002;
+    min-width: 0;
 }
 
 .agenda-time {
-    display: block;
-    font-weight: 700;
     color: #ffae26;
-    font-size: 1.2em;
-    margin-bottom: 0.2em;
+    font-weight: 700;
+    text-align: left;
+    font-size: 1.1em;
+    letter-spacing: 0.02em;
+    padding-right: 1em;
+    white-space: nowrap;
 }
 
 .agenda-title {
-    display: block;
-    font-size: 1.1em;
     color: #fff;
+    text-align: right;
+    font-size: 1.1em;
+    font-weight: 500;
     letter-spacing: 0.02em;
+    padding-left: 1em;
+    word-break: break-word;
 }
