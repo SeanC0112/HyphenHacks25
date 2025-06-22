@@ -6,10 +6,20 @@ function FAQItem({ question, answer }) {
     return (
         <div className="faq-item">
             <hr className='faq-divider' />
-            <h3 className="faq-question" onClick={() => setIsOpen(!isOpen)}>
-                {question}
-            </h3>
-            {isOpen && <p className="faq-answer">{answer}</p>}
+            <div className="faq-question-row" onClick={() => setIsOpen(!isOpen)}>
+                <span className={`faq-symbol${isOpen ? " open" : ""}`}>
+                    {isOpen ? "−" : "+"}
+                </span>
+                <h3 className="faq-question">{question}</h3>
+            </div>
+            <div
+                className={`faq-answer-wrapper${isOpen ? " open" : ""}`}
+                style={{
+                    maxHeight: isOpen ? "500px" : "0",
+                }}
+            >
+                <p className="faq-answer">{answer}</p>
+            </div>
         </div>
     );
 }

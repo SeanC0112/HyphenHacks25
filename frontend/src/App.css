@@ -64,7 +64,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 95vh;
+  height: 93.5vh;
   min-height: calc(fit-content + 50px);
   justify-content: flex-start; /* default, but can be omitted */
   position: relative;
@@ -138,7 +138,7 @@
   font-style: normal;
   font-size: 2em;
   width: 96vw;
-  bottom: 3.5vh;
+  bottom: 2vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
