@@ -26,3 +26,7 @@
 .faq-question {
     cursor: pointer;
 }
+
+.faq-divider {
+    width: 50vw;
+}

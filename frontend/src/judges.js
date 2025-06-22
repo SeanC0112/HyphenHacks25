@@ -33,9 +33,10 @@ const JudgesData = [
 
 const Judges = React.forwardRef((props, ref) => (
     <div className="judges" ref={ref}>
-        {JudgesData.map((item, index) => (
+        <h1 className="judges-title">Judges</h1>
+        {/* {JudgesData.map((item, index) => (
             <JudgeItem key={index} item={item} />
-        ))}
+        ))} */}
     </div>
 ))
 

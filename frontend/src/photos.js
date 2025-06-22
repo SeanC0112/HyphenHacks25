@@ -86,7 +86,7 @@ function Photos() {
   return (
     <div className="photos">
       <h1 className="photo-title">Previous Hackathons</h1>
-      <hr className="photo-break" />
+      {/* <hr className="photo-break" /> */}
       <div
         className="photo-row no-pointer"
         ref={rowRef}

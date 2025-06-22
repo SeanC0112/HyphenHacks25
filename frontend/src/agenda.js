@@ -28,8 +28,16 @@ const Items = [
         title: "Hacking Begins!",
     },
     {
+        time: "11:00 AM",
+        title: "First Workshop",
+    },
+    {
         time: "12:15 PM",
         title: "Lunch",
+    },
+    {
+        time: "1:00 PM",
+        title: "Second Workshop",
     },
     {
         time: "6:30 PM",
