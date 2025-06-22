@@ -29,9 +29,12 @@
 
 .faq-question-row {
     display: flex;
+
+    justify-content: center;
     align-items: center;
     cursor: pointer;
     gap: 1em;
+    /* width: 100vw; */
     user-select: none;
 }
 
