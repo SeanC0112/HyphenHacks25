@@ -8,7 +8,13 @@ const OrganizerItem = ({item}) => {
             <div className="organizer-info">
                 <h3 className="organizer-name">{item.name}</h3>
                 <p className="organizer-title">{item.title}</p>
-                <p className="organizer-linkedin">{item.linkedin}</p>
+                <a
+                  href={item.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                    <img src="/linkedin.png"  className="organizer-linkedin" />
+                </a>
             </div>
         </div>
     );
@@ -16,10 +22,10 @@ const OrganizerItem = ({item}) => {
 
 const OrganizersData = [
     {
-        name: "Organizer 1",
+        name: "Sean Coleman",
         image: "https://example.com/organizer1-image.png",
         title: "test",
-        linkedin: "organizer1@example.com"
+        linkedin: "https://www.linkedin.com/in/sean-coleman-4731a5359/"
     },
     {
         name: "Organizer 2",
