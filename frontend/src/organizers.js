@@ -7,7 +7,8 @@ const OrganizerItem = ({item}) => {
             <img src={item.image} alt={item.name} className="organizer-image" />
             <div className="organizer-info">
                 <h3 className="organizer-name">{item.name}</h3>
-                <p className="organizer-contact">{item.contact}</p>
+                <p className="organizer-title">{item.title}</p>
+                <p className="organizer-linkedin">{item.linkedin}</p>
             </div>
         </div>
     );
@@ -17,17 +18,20 @@ const OrganizersData = [
     {
         name: "Organizer 1",
         image: "https://example.com/organizer1-image.png",
-        contact: "organizer1@example.com"
+        title: "test",
+        linkedin: "organizer1@example.com"
     },
     {
         name: "Organizer 2",
         image: "https://example.com/organizer2-image.png",
-        contact: "organizer2@example.com"
+        title: "test",
+        linkedin: "organizer2@example.com"
     },
     {
         name: "Organizer 3",
         image: "https://example.com/organizer3-image.png",
-        contact: "organizer3@example.com"
+        title: "test",
+        linkedin: "organizer3@example.com"
     }
 ];
 
