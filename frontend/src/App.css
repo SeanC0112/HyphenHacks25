@@ -4,7 +4,7 @@
 
 .App-logo {
   /* min-height: 40px; */
-  height: 80%; /* Adjusted for smaller size */
+  height: 5vmin; /* Adjusted for smaller size */
   pointer-events: none;
   margin-left: 16px;      /* Add spacing to the right of the logo */
   opacity: 1;
@@ -16,7 +16,7 @@
 .App-header {
   background-color: rgba(0, 0, 0, 0.75);
   /* min-height: 60px; */
-  height: 10vh;
+  height: 5vh;
   min-height: 50px;
   display: flex;
   flex-direction: row;      /* Change to row */
@@ -126,6 +126,57 @@
   margin: 0;
   padding: 0;
   filter: drop-shadow(0 0 2vh #E4A039);
+}
+
+.App-intro-footer {
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  width: 96vw;
+  top: 1vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.App-intro-footer a {
+  all: unset;
+  cursor: pointer;
+  display: contents; /* Makes the <a> tag not affect layout, only its child does */
+}
+
+.App-intro-footer-left {
+  background-image: linear-gradient(0.25turn,#e2aa39, #D78D1D);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;        /* Add this for Safari/Chrome */
+  -webkit-text-fill-color: transparent; /* Add this for Safari/Chrome */
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 0 1.5vh #E4A039);
+  text-align: left;
+  flex: 1;
+  margin-right: auto;
+}
+
+.App-intro-footer-right {
+  background-image: linear-gradient(0.25turn,#e2aa39, #D78D1D);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;        /* Add this for Safari/Chrome */
+  -webkit-text-fill-color: transparent; /* Add this for Safari/Chrome */
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 0 1.5vh #E4A039);
+  text-align: right;
+  flex: 1;
+  margin-left: auto;
+}
+
+.App-intro-footer-right:hover {
+  cursor: pointer;
 }
 
 .App-gradient {

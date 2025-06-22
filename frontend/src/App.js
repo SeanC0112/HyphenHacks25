@@ -22,7 +22,6 @@ function App() {
     <div className="App">
       <Background />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <div className="App-header-buttons">
           <button className='App-button' onClick={() => aboutRef.current?.scrollIntoView({ behavior: 'smooth' })}>
             About
@@ -48,6 +47,16 @@ function App() {
         <h1 className="App-title-top">Hyphen</h1>
         <h1 className="App-hyphen">-</h1>
         <h1 className="App-title-bottom">Hacks</h1>
+        <div className='App-intro-footer'>
+          <span className='App-intro-footer-left'>September 27th, 2025</span>
+          <a
+            href="https://www.google.com/maps/place/Lick+Wilmerding+High+School/@37.7227779,-122.4518189,17z/data=!3m1!4b1!4m6!3m5!1s0x808f7c2a56b75bb5:0x72b2d521bc242bb4!8m2!3d37.7227779!4d-122.449244!16zL20vMDZicHpi?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className='App-intro-footer-right'>Lick-Wilmerding High School</span>
+          </a>
+        </div>
       </div>
       <div className='App-gradient'></div>
       <div className='App-info'>
@@ -60,6 +69,7 @@ function App() {
         <Organizers ref={organizersRef} />
       </div>
       <div className="App-footer">
+        <img src={logo} className="App-logo" alt="logo" />
         <span className="footer-left">Made with ❤️ by the Hyphen-Hacks Team</span>
         <span className="footer-right">© 2025 Hyphen-Hacks</span>
       </div>
