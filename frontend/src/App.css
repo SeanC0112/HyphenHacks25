@@ -68,6 +68,7 @@
   min-height: calc(fit-content + 50px);
   justify-content: flex-start; /* default, but can be omitted */
   position: relative;
+  margin:0;
 }
 
 .App-title-top {
@@ -137,7 +138,7 @@
   font-style: normal;
   font-size: 2em;
   width: 96vw;
-  top: 1vh;
+  bottom: 3.5vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
