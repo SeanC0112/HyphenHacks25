@@ -62,15 +62,18 @@
 
 .faq-answer-wrapper {
     overflow: hidden;
-    transition: max-height 0.4s cubic-bezier(.4,2,.6,1);
+    transition: max-height 0.5s cubic-bezier(.4,2,.6,1), opacity 0.5s, padding 0.3s;
     max-height: 0;
+    opacity: 0;
+    padding: 0 0 0 2.5em; /* Only left padding when closed */
 }
 .faq-answer-wrapper.open {
-    /* max-height set inline for smooth animation */
+    opacity: 1;
+    padding: 1em 0 0 2.5em; /* Top and left padding when open */
 }
 
 .faq-answer {
-    margin: 1em 0 0 2.5em;
+    margin: 0; /* Remove top margin */
     font-size: 1.1em;
     color: #fff;
 }

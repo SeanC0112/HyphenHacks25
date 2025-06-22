@@ -1,8 +1,14 @@
-import React, { useState, forwardRef } from 'react';
+import React, { useState, useRef, forwardRef } from 'react';
 import './faqs.css';
 
 function FAQItem({ question, answer }) {
     const [isOpen, setIsOpen] = useState(false);
+    const answerRef = useRef(null);
+
+    const maxHeight = isOpen && answerRef.current
+        ? `${answerRef.current.scrollHeight}px`
+        : "0px";
+
     return (
         <div className="faq-item">
             <hr className='faq-divider' />
@@ -15,10 +21,10 @@ function FAQItem({ question, answer }) {
             <div
                 className={`faq-answer-wrapper${isOpen ? " open" : ""}`}
                 style={{
-                    maxHeight: isOpen ? "500px" : "0",
+                    maxHeight,
                 }}
             >
-                <p className="faq-answer">{answer}</p>
+                <p className="faq-answer" ref={answerRef}>{answer}</p>
             </div>
         </div>
     );
