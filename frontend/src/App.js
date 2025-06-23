@@ -22,6 +22,15 @@ function App() {
     <div className="App">
       <Background />
       <header className="App-header">
+        <a
+          href="https://forms.gle/GXSsVBFoPZdE1HnNA"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="App-button App-signup-header"
+          style={{ textDecoration: "none" }}
+        >
+          Sign Up
+        </a>
         <div className="App-header-buttons">
           <button className='App-button' onClick={() => aboutRef.current?.scrollIntoView({ behavior: 'smooth' })}>
             About
@@ -40,7 +49,7 @@ function App() {
           </button>
           {/* <button className='App-button' onClick={() => organizersRef.current?.scrollIntoView({ behavior: 'smooth' })}>
             Organizers
-          </button>  dont need that much free self promo*/}
+          </button> */}
         </div>
       </header>
       <div className="App-intro title-row">
