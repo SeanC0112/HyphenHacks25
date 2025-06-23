@@ -11,7 +11,7 @@
     font-family: "Changa One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 5vmin;
+    font-size: 8vmin;
     background-image: linear-gradient(0.25turn,#ffffff, #DDDDDD);
     color: transparent;
     background-clip: text;
@@ -21,8 +21,13 @@
     z-index: 1;
     /* top: 0.3em; */
     line-height: 1;
-    /* margin: 0;
-    padding: 0; */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.sponsor-list {
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .gold-sponsor-tier-title {

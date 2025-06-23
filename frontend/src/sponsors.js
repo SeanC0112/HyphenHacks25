@@ -42,19 +42,19 @@ const Sponsors = forwardRef((props, ref) => (
         <p className="sponsors-title">Sponsors</p>
         <div className="sponsor-list">
             <div className="gold-sponsors">
-                <h2 className="gold-sponsor-tier-title">Gold Sponsors</h2>
+                <h2 className="gold-sponsor-tier-title">Gold Tier</h2>
                 {SponsorData.filter(sponsor => sponsor.tier === "Gold").map((sponsor, index) => (
                     <SponsorCardGold key={index} sponsor={sponsor} />
                 ))}
             </div>
             <div className="silver-sponsors">
-                <h2 className="silver-sponsor-tier-title">Silver Sponsors</h2>
+                <h2 className="silver-sponsor-tier-title">Silver Tier</h2>
                 {SponsorData.filter(sponsor => sponsor.tier === "Silver").map((sponsor, index) => (
                     <SponsorCardSilver key={index} sponsor={sponsor} />
                 ))}
             </div>
             <div className="bronze-sponsors">
-                <h2 className="bronze-sponsor-tier-title">Bronze Sponsors</h2>
+                <h2 className="bronze-sponsor-tier-title">Bronze Tier</h2>
                 {SponsorData.filter(sponsor => sponsor.tier === "Bronze").map((sponsor, index) => (
                     <SponsorCardBronze key={index} sponsor={sponsor} />
                 ))}

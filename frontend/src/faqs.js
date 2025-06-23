@@ -32,16 +32,16 @@ function FAQItem({ question, answer }) {
 
 const faqData = [
     {
-        question: "Can I join without a team?",
-        answer: "Yes, you can join without a team! You can enter solo or find a team on discord or during designated team formation time at the event."
+        question: "Who is eligible to participate?",
+        answer: "Anyone currently enrolled in a high school!"
     },
     {
-        question: "Is food provided?",
-        answer: "Absolutely, lots of yummy food and snacks will be available for competitors!"
-    },
-    {
-        question: "I'm a have little or no coding expierence, can I participate?",
+        question: "I'm a have little or no coding expierence, can I enter?",
         answer: "Of course! We will offer informative workshops for you to learn about coding! Alternatively, many skills besides coding are also important, like visual design."
+    },
+    {
+        question: "Can I join without a team?",
+        answer: "Yes, you can join without a team! You can enter solo or find a team on Discord or during designated team formation time at the event."
     },
     {
         question: "Is Hyphen-Hacks free?",
@@ -52,16 +52,16 @@ const faqData = [
         answer: "Just across the way for Lick-Wilmerding is Balboa Park BART Station, allowing for easy access for people all over the Bay Area! In addition, The K muni line runs in front of the school and the 8, 29, 49, 14, 54, and 43 bus lines have stops just outside."
     },
     {
-        question: "Who is eligible to participate?",
-        answer: "Anyone currently enrolled in a high school!"
+        question: "What should I bring?",
+        answer: "A laptop, charger, waterbottle, and eagerness to learn and code!"
+    },
+    {
+        question: "Is food provided?",
+        answer: "Absolutely, lots of yummy food and snacks will be available for competitors!"
     },
     {
         question: "When will we know the tracks?",
         answer: "The tracks will be announced during the opening ceremony of the Hackathon!"
-    },
-    {
-        question: "What should I bring?",
-        answer: "A laptop, charger, waterbottle, and eagerness to learn and code!"
     },
     {
         question: "Any other questions?",

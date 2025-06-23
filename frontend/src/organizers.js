@@ -23,29 +23,26 @@ const OrganizerItem = ({item}) => {
 const OrganizersData = [
     {
         name: "Sean Coleman",
-        image: "https://example.com/organizer1-image.png",
-        title: "test",
+        image: "/sean.JPG",
+        title: "Executive Director and Website Lead",
         linkedin: "https://www.linkedin.com/in/sean-coleman-4731a5359/"
     },
     {
-        name: "Organizer 2",
-        image: "https://example.com/organizer2-image.png",
-        title: "test",
-        linkedin: "organizer2@example.com"
-    },
-    {
-        name: "Organizer 3",
-        image: "https://example.com/organizer3-image.png",
-        title: "test",
-        linkedin: "organizer3@example.com"
+        name: "Eddie Binetti",
+        image: "/eddie.png",
+        title: "Outreach Lead and Graphic Designer",
+        linkedin: "deosnthavelinkedinyet.com"
     }
 ];
 
 const Organizers = React.forwardRef((props, ref) => (
     <div className="organizers" ref={ref}>
-        {OrganizersData.map((item, index) => (
-            <OrganizerItem key={index} item={item} />
-        ))}
+        <h1 className="organizers-title">Organizers</h1>
+        <div className="organizers-wrapper">
+            {OrganizersData.map((item, index) => (
+                <OrganizerItem key={index} item={item} />
+            ))}
+        </div>
     </div>
 ))
 
