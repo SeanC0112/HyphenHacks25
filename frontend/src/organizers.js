@@ -24,7 +24,7 @@ const OrganizersData = [
     {
         name: "Sean Coleman",
         image: "/sean.JPG",
-        title: "Executive Director and Website Lead",
+        title: "Executive Director and Software Lead",
         linkedin: "https://www.linkedin.com/in/sean-coleman-4731a5359/"
     },
     {
