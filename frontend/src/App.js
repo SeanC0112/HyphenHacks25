@@ -26,7 +26,7 @@ function App() {
           href="https://forms.gle/GXSsVBFoPZdE1HnNA"
           target="_blank"
           rel="noopener noreferrer"
-          className="App-button App-signup-header"
+          className="App-signup-header"
           style={{ textDecoration: "none" }}
         >
           Sign Up!
