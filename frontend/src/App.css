@@ -52,6 +52,33 @@
   box-shadow: 0px 0px 10px #ffae26, inset 0 0 0 3px #ffae26;
 }
 
+.App-signup {
+  background-image: linear-gradient(0.25turn, #e2aa39, #ffae26);
+  background-clip: text;
+  color: transparent !important;
+  box-shadow: 0px 0px 10px #ffae26, inset 0 0 0 3px #ffae26;
+  font-family: "Changa One", sans-serif;
+  font-weight: 700;
+  border-radius: 1em;
+  padding: 0 2vw;
+  margin: 2vw;
+  height: 3vw;                /* Match .App-button height */
+  /* min-height: 32px;           Ensures it's not too small */
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  box-shadow: 0px 0px 10px #ffae26, inset 0 0 0 3px #ffae26;
+  cursor: pointer;
+}
+
+.App-signup:hover {
+  transition: text 0.4s, background 0.4s, color 0.4s, box-shadow 0.4s;
+  background: linear-gradient(0.25turn, #ffae26, #e2aa39);
+  color: #131313 !important;
+  box-shadow: none;
+}
+
+
 .App-header-buttons {
   margin-left: auto;
   display: flex;

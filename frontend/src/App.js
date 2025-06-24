@@ -29,7 +29,7 @@ function App() {
           className="App-button App-signup-header"
           style={{ textDecoration: "none" }}
         >
-          Sign Up
+          Sign Up!
         </a>
         <div className="App-header-buttons">
           <button className='App-button' onClick={() => aboutRef.current?.scrollIntoView({ behavior: 'smooth' })}>
@@ -69,6 +69,15 @@ function App() {
       </div>
       <div className='App-gradient'></div>
       <div className='App-info'>
+         <a
+          href="https://forms.gle/GXSsVBFoPZdE1HnNA"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="App-signup"
+          style={{ textDecoration: "none" }}
+        >
+          Sign Up!
+        </a>
         <About ref={aboutRef} />
         <Agenda ref={agendaRef} />
         <FAQs ref={faqRef} />
