@@ -3,11 +3,18 @@ import './judges.css';
 
 const JudgeItem = ({item}) => {
     return (
-        <div className="judges-item">
-            <img src={item.image} alt={item.name} className="judges-image" />
-            <div className="judges-info">
-                <h3 className="judges-name">{item.name}</h3>
-                <p className="judges-contact">{item.contact}</p>
+        <div className="judge-item">
+            <img src={item.image} alt={item.name} className="judge-image" />
+            <div className="judge-info">
+                <h3 className="judge-name">{item.name}</h3>
+                <p className="judge-bio">{item.bio}</p>
+                <a
+                  href={item.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                    <img src="/linkedin.png"  className="judge-linkedin" />
+                </a>
             </div>
         </div>
     );
@@ -15,28 +22,24 @@ const JudgeItem = ({item}) => {
 
 const JudgesData = [
     {
-        name: "Judge 1",
-        image: "https://example.com/judge1-image.png",
-        contact: "judge1@example.com"
-    },
-    {
-        name: "Judge 2",
-        image: "https://example.com/judge2-image.png",
-        contact: "judge2@example.com"
-    },
-    {
-        name: "Judge 3",
-        image: "https://example.com/judge3-image.png",
-        contact: "judge3@example.com"
+        name: "Thijs Simonian",
+        image: "/thijs.jpg",
+        bio: "Building video models at LMArena. Previous SWE at Discord. LWHS Class of '24!",
+        linkedin: "https://www.linkedin.com/in/thijsdev/"
     }
 ];
 
 const Judges = React.forwardRef((props, ref) => (
     <div className="judges" ref={ref}>
         <h1 className="judges-title">Judges</h1>
-        {/* {JudgesData.map((item, index) => (
-            <JudgeItem key={index} item={item} />
-        ))} */}
+        <div className="judges-wrapper">
+            {JudgesData.map((item, index) => (
+                <JudgeItem key={index} item={item} />
+            ))}
+        </div>
+        <div className="judges-footer">
+            <p className="judges-footer-text">Interested in being a judge? <a href="https://forms.gle/AXwpXXfqNx3XZPjx6" target="_blank" rel="noopener noreferrer">Sign up here!</a></p>
+        </div>
     </div>
 ))
 
