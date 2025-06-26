@@ -22,3 +22,41 @@
     /* top: 0.3em; */
     line-height: 1;
 }
+
+.about-intro {
+    font-size: 1.3em;
+    margin: 2vmin auto 4vmin auto;
+    color: #fff;
+    max-width: 700px;
+    line-height: 1.5;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto 0 auto;
+    gap: 2.5vmin;
+    /* max-width: 700px; */
+}
+
+.about-item {
+    background: rgba(255,255,255,0.06);
+    border-radius: 1vw;
+    padding: 2vmin 2.5vmin;
+    box-shadow: 0 2px 8px #0002;
+    width: 10vw;
+}
+
+.about-subtitle {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    color: #ffae26;
+}
+
+.about-text {
+    font-size: 1em;
+    color: #fff;
+    margin: 0;
+}
