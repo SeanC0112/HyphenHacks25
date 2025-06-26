@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="App">
-      {width > 700 ? (
+      {width > 800 ? (
         <>
           <Background />
           <header className="App-header">
@@ -102,7 +102,39 @@ function App() {
           </div>
         </>
       ) : (
-        <p>{width}</p>
+        <>
+        <Background />
+        <div className="App-intro title-row">
+          <h1 className="App-title-top">Hyphen</h1>
+          <h1 className="App-hyphen">-</h1>
+          <h1 className="App-title-bottom">Hacks</h1>
+          <div className='App-intro-footer'>
+            <span className='App-intro-footer-left'>September 27th, 2025</span>
+            <a
+              href="https://www.google.com/maps/place/Lick+Wilmerding+High+School/@37.7227779,-122.4518189,17z/data=!3m1!4b1!4m6!3m5!1s0x808f7c2a56b75bb5:0x72b2d521bc242bb4!8m2!3d37.7227779!4d-122.449244!16zL20vMDZicHpi?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className='App-intro-footer-right'>Lick-Wilmerding High School</span>
+            </a>
+          </div>
+        </div>
+         <div className='App-gradient'></div>
+        <div className='App-info'>
+            <a
+            href="https://forms.gle/GXSsVBFoPZdE1HnNA"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="App-signup"
+            style={{ textDecoration: "none" }}
+          >
+            Sign Up!
+          </a>
+          <p className="App-mobile-text">
+            Hyphen-Hacks is best viewed on a larger screen. Please visit us on a desktop for the full experience!
+          </p>
+        </div>
+        </>
       )}
     </div>
   );
