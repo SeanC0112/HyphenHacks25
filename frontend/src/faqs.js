@@ -32,40 +32,36 @@ function FAQItem({ question, answer }) {
 
 const faqData = [
     {
-        question: "Who is eligible to participate?",
-        answer: "Anyone currently enrolled in a high school!"
+        question: "Who can participate?",
+        answer: "Any high school student in the Bay Area is welcome to join Hyphen-Hacks."
     },
     {
-        question: "I'm a have little or no coding expierence, can I enter?",
-        answer: "Of course! We will offer informative workshops for you to learn about coding! Alternatively, many skills besides coding are also important, like visual design."
+        question: "Do I need coding experience?",
+        answer: "No prior experience is required! We offer beginner-friendly workshops and mentors to help you learn as you go."
     },
     {
         question: "Can I join without a team?",
-        answer: "Yes, you can join without a team! You can enter solo or find a team on Discord or during designated team formation time at the event."
+        answer: "Yes! You can participate solo or find teammates at the event or on our Discord server."
     },
     {
-        question: "Is Hyphen-Hacks free?",
-        answer: "Yes, Hyphen-Hacks is free to everyone, in alignment with our mission of inclusivity!"
-    },
-    {
-        question: "Is there public transportation nearby?",
-        answer: "Just across the way for Lick-Wilmerding is Balboa Park BART Station, allowing for easy access for people all over the Bay Area! In addition, The K muni line runs in front of the school and the 8, 29, 49, 14, 54, and 43 bus lines have stops just outside."
+        question: "How much does it cost?",
+        answer: "Hyphen-Hacks is completely free for all participants, including meals and snacks."
     },
     {
         question: "What should I bring?",
-        answer: "A laptop, charger, waterbottle, and eagerness to learn and code!"
+        answer: "Bring a laptop, charger, water bottle, and your creativity! We'll provide food, drinks, and WiFi."
     },
     {
-        question: "Is food provided?",
-        answer: "Absolutely, lots of yummy food and snacks will be available for competitors!"
+        question: "How do I get there?",
+        answer: "The event is at Lick-Wilmerding High School, right next to Balboa Park BART and several Muni and bus lines."
     },
     {
-        question: "When will we know the tracks?",
-        answer: "The tracks will be announced during the opening ceremony of the Hackathon!"
+        question: "When will the tracks be announced?",
+        answer: "Tracks and themes will be revealed during the opening ceremony."
     },
     {
-        question: "Any other questions?",
-        answer: "Reach out 27sean.coleman@lwhs.org with your inquiry."
+        question: "Still have questions?",
+        answer: "Email 27sean.coleman@lwhs.org and we'll be happy to help!"
     }
 ];
 

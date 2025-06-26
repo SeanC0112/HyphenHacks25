@@ -4,27 +4,27 @@ import './about.css';
 const AboutData = [
     {
         title: "Beginner Friendly",
-        description: "Open-to-all workshops will be held to help anyone learn the tools they need to build and compete, no experience required. Additionally, volunteers with technical expertise will be around to help anyone who requests it."
+        description: "No experience? No problem! Our workshops and mentors will help you learn the basics and get started building your first project."
     },
     {
         title: "Inclusive by Design",
-        description: "Everyone is welcome, no matter your background, school, or experience. We believe tech should be for everyone!"
+        description: "Hyphen-Hacks welcomes all Bay Area high schoolers, regardless of background, school, or experience. Everyone is encouraged to participate."
     },
     {
-        title: "Free Dining",
-        description: "Food and drink will be freely provided at the event for everyone!"
+        title: "Free Food & Drinks",
+        description: "Enjoy complimentary meals, snacks, and drinks throughout the event so you can focus on creating and collaborating."
     },
     {
-        title: "Judging",
-        description: "Winners will be selected by a panel of industry professionals and awarded prizes for creativity, impact, and technical skill."
+        title: "Industry Judging",
+        description: "Your projects will be reviewed by experienced professionals who will provide feedback and award prizes for creativity, impact, and technical skill."
     },
     {
-        title: "Meet Community",
-        description: "Network with students, tech professionals, and leaders passionate about the future of STEM!"
+        title: "Networking & Community",
+        description: "Connect with fellow students, tech professionals, and STEM leaders. Build friendships and professional relationships that last beyond the event."
     },
     {
-        title: "Improve Valuable Skills",
-        description: "Practice pitching ideas in front of an audience, an important skill in the real-world. Gain insightful feedback from the panel of expert judges and sharpen your skills."
+        title: "Skill Development",
+        description: "Practice teamwork, pitching ideas, and presenting to an audience. Gain confidence and valuable skills for future projects and opportunities."
     }
 ]
 
