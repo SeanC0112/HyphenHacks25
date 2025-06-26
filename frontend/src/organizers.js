@@ -8,13 +8,13 @@ const OrganizerItem = ({item}) => {
             <div className="organizer-info">
                 <h3 className="organizer-name">{item.name}</h3>
                 <p className="organizer-title">{item.title}</p>
-                <a
+                {item.linkedin ? <a
                   href={item.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                     <img src="/linkedin.png"  className="organizer-linkedin" />
-                </a>
+                </a> : null}
             </div>
         </div>
     );
@@ -28,10 +28,20 @@ const OrganizersData = [
         linkedin: "https://www.linkedin.com/in/sean-coleman-4731a5359/"
     },
     {
+        name: "Sloane Marciniak-Velazco",
+        image: "/sloane.jpeg",
+        title: "Corporate Relations Lead",
+        linkedin: "https://www.linkedin.com/in/sloane-m-1740a32ba/",
+    },
+    {
         name: "Eddie Binetti",
         image: "/eddie.png",
         title: "Outreach Lead and Graphic Designer",
-        linkedin: "deosnthavelinkedinyet.com"
+    },
+    {
+        name: "Aurora Huang",
+        image: "/aurora.jpg",
+        title: "Logistics Lead",
     }
 ];
 
