@@ -2,59 +2,63 @@ import React, { forwardRef } from "react";
 import './sponsors.css';
 
 function SponsorCardGold({ sponsor }) {
+    return (
+        <a href={sponsor.link} target="_blank" rel="noopener noreferrer" className="sponsor-card gold">
+            <img src={sponsor.logo} alt={`${sponsor.name} logo`} className="sponsor-logo" />
+            <p className="sponsor-title">{sponsor.name}</p>
+            <p className="sponsor-description">{sponsor.description}</p>
+        </a>
+    );
 
 }
 
 function SponsorCardSilver({ sponsor }) {
-
+    return (
+        <a href={sponsor.link} target="_blank" rel="noopener noreferrer" className="sponsor-card silver">
+            <img src={sponsor.logo} alt={`${sponsor.name} logo`} className="sponsor-logo" />
+            <p className="sponsor-title">{sponsor.name}</p>
+            <p className="sponsor-description">{sponsor.description}</p>
+        </a>
+    );
 }
 
 function SponsorCardBronze({ sponsor }) {
-
+    return (
+        <a href={sponsor.link} target="_blank" rel="noopener noreferrer" className="sponsor-card bronze">
+            <img src={sponsor.logo} alt={`${sponsor.name} logo`} className="sponsor-logo" />
+            <p className="sponsor-title">{sponsor.name}</p>
+        </a>
+    );
 }
 
 const SponsorData = [
     {
-        name: "Sponsor 1",
+        name: "Lick-Wilmerding",
         tier: "Gold",
-        logo: "https://example.com/sponsor1-logo.png",
-        description: "Description for Sponsor 1",
-        link: "https://sponsor1.example.com"
+        logo: "logo.svg",
+        description: "A private school with public purpose, Lick-Wilmerding High School develops the head, heart, and hands of highly motivated students from all walks of life, inspiring them to become lifelong learners who contribute to the world with confidence and compassion.",
+        link: "https://lwhs.org"
     },
-    {
-        name: "Sponsor 2",
-        tier: "Silver",
-        logo: "https://example.com/sponsor2-logo.png",
-        description: "Description for Sponsor 2",
-        link: "https://sponsor2.example.com"
-    },
-    {
-        name: "Sponsor 3",
-        tier: "Bronze",
-        logo: "https://example.com/sponsor3-logo.png",
-        description: "Description for Sponsor 3",
-        link: "https://sponsor3.example.com"
-    }
 ]
 
 const Sponsors = forwardRef((props, ref) => (
     <div className="sponsors" ref={ref}>
         <p className="sponsors-title">Sponsors</p>
         <div className="sponsor-list">
+            <h2 className="sponsor-tier-title gold">Gold Tier</h2>
             <div className="gold-sponsors">
-                <h2 className="gold-sponsor-tier-title">Gold Tier</h2>
                 {SponsorData.filter(sponsor => sponsor.tier === "Gold").map((sponsor, index) => (
                     <SponsorCardGold key={index} sponsor={sponsor} />
                 ))}
             </div>
+            <h2 className="sponsor-tier-title silver">Silver Tier</h2>
             <div className="silver-sponsors">
-                <h2 className="silver-sponsor-tier-title">Silver Tier</h2>
                 {SponsorData.filter(sponsor => sponsor.tier === "Silver").map((sponsor, index) => (
                     <SponsorCardSilver key={index} sponsor={sponsor} />
                 ))}
             </div>
+            <h2 className="sponsor-tier-title bronze">Bronze Tier</h2>
             <div className="bronze-sponsors">
-                <h2 className="bronze-sponsor-tier-title">Bronze Tier</h2>
                 {SponsorData.filter(sponsor => sponsor.tier === "Bronze").map((sponsor, index) => (
                     <SponsorCardBronze key={index} sponsor={sponsor} />
                 ))}

@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useRef } from 'react';
 import Background from './background';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import Agenda from './agenda';
 import Judges from './judges';
 import Photos from './photos';
@@ -96,7 +96,7 @@ function App() {
             <Organizers ref={organizersRef} />
           </div>
           <div className="App-footer">
-            <img src={logo} className="App-logo" alt="logo" />
+            <img src='logo.svg' className="App-logo" alt="logo" />
             <span className="footer-left">Made with ❤️ by the Hyphen-Hacks Team</span>
             <span className="footer-right">© 2025 Hyphen-Hacks</span>
           </div>

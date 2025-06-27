@@ -30,44 +30,150 @@
     padding-top: 0;
 }
 
-.gold-sponsor-tier-title {
-    background-image: linear-gradient(0.25turn,#e2aa39, #D78D1D);
+.sponsor-tier-title {
+
     color: transparent;
     font-family: "Raleway", sans-serif;
     font-weight: 750;
+    font-size: 5vmin;
     font-style: normal;
     background-clip: text;
     -webkit-background-clip: text;        /* Add this for Safari/Chrome */
     -webkit-text-fill-color: transparent; /* Add this for Safari/Chrome */
     position: relative;
     z-index: 1;
+}
+
+.sponsor-tier-title.gold {
+    background-image: linear-gradient(0.25turn,#e2aa39, #D78D1D);
     filter: drop-shadow(0 0 2vh #E4A039);
 }
 
-.silver-sponsor-tier-title {
+.sponsor-tier-title.silver {
     background-image: linear-gradient(0.25turn,#C0C0C0, #A9A9A9);
-    color: transparent;
-    background-clip: text;
-    font-family: "Raleway", sans-serif;
-    font-weight: 750;
-    font-style: normal;
-    -webkit-background-clip: text;        /* Add this for Safari/Chrome */
-    -webkit-text-fill-color: transparent; /* Add this for Safari/Chrome */
-    position: relative;
-    z-index: 1;
-    /* filter: drop-shadow(0 0 1vh #C0C0C0); */
 }
 
-.bronze-sponsor-tier-title {
+.sponsor-tier-title.bronze {
     background-image: linear-gradient(0.25turn,#cd7f32, #b87333);
-    color: transparent;
-    background-clip: text;
+}
+
+.gold-sponsors {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    padding: 0;
+    scrollbar-width: none; /* Firefox */
+    overflow-x: auto;
+    overflow-y: visible;
+}
+
+/* Card base style */
+.sponsor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 15vw;
+    min-width: 180px;
+    max-width: 260px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 1.2em;
+    box-shadow: 0 4px 24px 0 #0004, 0 0 0 4px rgba(255,255,255,0.04) inset;
+    padding: 2.5vmin 2vmin 2vmin 2vmin;
+    margin: 2vmin 1vw;
+    transition: transform 0.18s, box-shadow 0.18s;
+}
+
+.sponsor-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px 0 #ffae26, 0 0 0 4px rgba(255,255,255,0.08) inset;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/* Tier color accents */
+.sponsor-card.gold {
+    border: 2.5px solid #e2aa39;
+    background: linear-gradient(0.25turn, #fffbe6 60%, #ffe7b3 100%);
+}
+
+.sponsor-card,
+.sponsor-card:visited,
+.sponsor-card:active,
+.sponsor-card:focus,
+.sponsor-card:hover {
+    text-decoration: none;
+}
+
+.sponsor-card.silver {
+    border: 2.5px solid #b0b0b0;
+    background: linear-gradient(0.25turn, #f6f6f6 60%, #e0e0e0 100%);
+}
+
+.sponsor-card.bronze {
+    border: 2.5px solid #cd7f32;
+    background: linear-gradient(0.25turn, #f8ede3 60%, #e3c7a1 100%);
+}
+
+/* Sponsor logo */
+.sponsor-logo {
+    width: 80%;
+    height: auto;
+    max-height: 8vh;
+    object-fit: contain;
+    margin-bottom: 1.2vmin;
+    margin-top: 0.5vmin;
+    border-radius: 0.5em;
+    background: #fff2;
+    /* box-shadow: 0 2px 8px #0002; */
+}
+
+/* Sponsor name link */
+.sponsor-title {
+    font-family: "Changa One", sans-serif;
+    font-size: 1.3em;
+    color: #222;
+    margin: 0.5em 0 0.2em 0;
+    text-decoration: none;
+    background: none;
+    transition: color 0.2s;
+    text-align: center;
+    word-break: break-word;
+}
+
+/* .sponsor-title:hover {
+    color: #ffae26;
+    text-shadow: 0 0 8px #ffae26aa;
+} */
+
+/* Sponsor description */
+.sponsor-description {
     font-family: "Raleway", sans-serif;
-    font-weight: 750;
-    font-style: normal;
-    -webkit-background-clip: text;        /* Add this for Safari/Chrome */
-    -webkit-text-fill-color: transparent; /* Add this for Safari/Chrome */
-    position: relative;
-    z-index: 1;
-    /* filter: drop-shadow(0 0 0.2vh #cd7f32); */
+    font-size: 1em;
+    color: #333;
+    text-align: center;
+    margin: 0.5em 0 0 0;
+    line-height: 1.4;
+    min-height: 3em;
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+    .sponsor-card {
+        width: 90vw;
+        min-width: 0;
+        max-width: 98vw;
+        margin: 2vmin auto;
+        text-decoration: none;
+    }
+    .gold-sponsors, .silver-sponsors, .bronze-sponsors {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.sponsor-card.gold .sponsor-title {
+    text-decoration: none;
 }
