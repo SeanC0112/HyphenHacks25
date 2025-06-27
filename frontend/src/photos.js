@@ -6,7 +6,7 @@ let numPhotos = 11;
 const photoList = [];
 for (let i = 0; i < numPhotos; i++) {
   photoList.push(`/photos/${i + 1}.JPG`);
-  if(photoList[i] === undefined) {
+  if(photoList[i] === undefined || photoList[i] === null) {
     photoList[i] = `/photos/${i + 1}.jpg`;
   }
 }
