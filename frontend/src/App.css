@@ -38,7 +38,7 @@
   border-radius: 1em;
   padding: 0 2vw;
   margin: 2vw;
-  height: 3vw;                /* Match .App-button height */
+  height: 2.5vw;                /* Match .App-button height */
   /* min-height: 32px;           Ensures it's not too small */
   display: flex;
   align-items: center;
