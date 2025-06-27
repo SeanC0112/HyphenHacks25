@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import './photos.css';
 
 let numPhotos = 11;
+// tests
 const photoList = [];
 for (let i = 0; i < numPhotos; i++) {
   photoList.push(`/photos/${i + 1}.JPG`);
