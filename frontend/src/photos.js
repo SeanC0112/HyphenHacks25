@@ -4,7 +4,7 @@ import './photos.css';
 let numPhotos = 11;
 const photoList = [];
 for (let i = 0; i < numPhotos; i++) {
-  photoList.push(`/photos/${i + 1}.jpg`);
+  photoList.push(`/photos/${i + 1}.JPG`);
 }
 
 function Photos() {
