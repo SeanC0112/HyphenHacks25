@@ -106,7 +106,7 @@ const Sponsors = forwardRef((props, ref) => (
             </div>
         </div>
         <a
-          href="mailto:27sean.coleman@lwhs.org?subject=Hyphen-Hacks%202025%20Sponsorship%20Inquiry"
+          href="mailto:27sean.coleman@lwhs.org?cc:cgodinez@lwhs.org&subject=Hyphen-Hacks%202025%20Sponsorship%20Inquiry"
           className="sponsor-email-button"
         >
           Contact Us About Sponsorship
