@@ -87,7 +87,7 @@
 }
 
 .sponsor-card:hover {
-    transform: translateY(-6px) scale(1.03);
+    transform: scale(1.03);
     box-shadow: 0 8px 32px 0 #ffae26, 0 0 0 4px rgba(255,255,255,0.08) inset;
     z-index: 2;
     cursor: pointer;
@@ -96,7 +96,7 @@
 /* Tier color accents */
 .sponsor-card.gold {
     border: 2.5px solid #e2aa39;
-    background: linear-gradient(0.25turn, #fffbe6 60%, #ffe7b3 100%);
+    background: linear-gradient(to right, #ffe7b3, #feebbc, #feefc6, #fef2cf, #fef6d9, #fef6d9, #fef6d9, #fef6d9, #fef2cf, #feefc6, #feebbc, #ffe7b3);
 }
 
 .sponsor-card,
@@ -109,12 +109,12 @@
 
 .sponsor-card.silver {
     border: 2.5px solid #b0b0b0;
-    background: linear-gradient(0.25turn, #f6f6f6 60%, #e0e0e0 100%);
+    background: linear-gradient(to right, #e0e0e0, #e4e4e4, #e8e8e8, #ececec, #f0f0f0, #f0f0f0, #f0f0f0, #f0f0f0, #ececec, #e8e8e8, #e4e4e4, #e0e0e0);
 }
 
 .sponsor-card.bronze {
     border: 2.5px solid #cd7f32;
-    background: linear-gradient(0.25turn, #f8ede3 60%, #e3c7a1 100%);
+    background: linear-gradient(to right, #e3c7a1, #e8cead, #ecd5b9, #f0dcc6, #f4e3d2, #f4e3d2, #f4e3d2, #f4e3d2, #f0dcc6, #ecd5b9, #e8cead, #e3c7a1);
 }
 
 /* Sponsor logo */
@@ -201,33 +201,98 @@
 .sponsorship-levels {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch; /* Make all boxes the same height */
     justify-content: center;
     gap: 2vmin;
     margin-top: 2vmin;
+    flex-wrap: wrap;
+}
+
+.sponsorship-level {
+    flex: 1 1 280px;
+    min-width: 260px;
+    max-width: 340px;
+    min-height: 340px;
+    box-sizing: border-box;
+    margin: 1.5vmin;
+    padding: 2.5vmin 2vmin 2vmin 2vmin;
+    border-radius: 1.2em;
+    box-shadow: 0 4px 24px 0 #0002, 0 0 0 4px rgba(255,255,255,0.04) inset;
+    text-align: center;
+    background: rgba(255,255,255,0.08);
+    border: 2.5px solid transparent;
+    transition: box-shadow 0.2s, border-color 0.2s, transform 0.18s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .sponsorship-level.gold {
-    border: 2.5px solid #e2aa39;
-    background: linear-gradient(0.25turn, #fffbe6 60%, #ffe7b3 100%);
+    border-color: #e2aa39;
+    background: linear-gradient(to right, #ffe7b3, #feebbc, #feefc6, #fef2cf, #fef6d9, #fef6d9, #fef6d9, #fef6d9, #fef2cf, #feefc6, #feebbc, #ffe7b3);
 }
-
 .sponsorship-level.silver {
-    border: 2.5px solid #b0b0b0;
-    background: linear-gradient(0.25turn, #f6f6f6 60%, #e0e0e0 100%);
+    border-color: #b0b0b0;
+    background: linear-gradient(to right, #e0e0e0, #e4e4e4, #e8e8e8, #ececec, #f0f0f0, #f0f0f0, #f0f0f0, #f0f0f0, #ececec, #e8e8e8, #e4e4e4, #e0e0e0);
+}
+.sponsorship-level.bronze {
+    border-color: #cd7f32;
+    background: linear-gradient(to right, #e3c7a1, #e8cead, #ecd5b9, #f0dcc6, #f4e3d2, #f4e3d2, #f4e3d2, #f4e3d2, #f0dcc6, #ecd5b9, #e8cead, #e3c7a1);
 }
 
-.sponsorship-level.bronze {
-    border: 2.5px solid #cd7f32;
-    background: linear-gradient(0.25turn, #f8ede3 60%, #e3c7a1 100%);
+.sponsorship-level:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 32px 0 #ffae26, 0 0 0 4px rgba(255,255,255,0.08) inset;
+    z-index: 2;
+    border-color: #ffae26;
+}
+
+.sponsorship-level-title {
+    font-family: "Changa One", sans-serif;
+    font-size: 2em;
+    margin-bottom: 0.2em;
+    color: #222;
+    letter-spacing: 0.03em;
+    text-shadow: 0 2px 8px #fff6;
+}
+
+.sponsorship-level-price {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ffae26;
+    margin-bottom: 0.7em;
+    letter-spacing: 0.02em;
+}
+
+.sponsorship-level-description {
+    font-size: 1.08em;
+    color: #333;
+    line-height: 1.6;
+    margin: 0 auto;
+    padding: 0 0.5em;
+    text-align: center;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sponsorship-level-description br {
+    margin-bottom: 0.5em;
+    content: "";
+    display: block;
 }
 
 @media (max-width: 900px) {
+    .sponsorship-levels {
+        flex-direction: column;
+        align-items: center;
+    }
     .sponsorship-level {
-        width: 220px;
-        /* min-width: 180px; */
-        max-width: 90vw;
-        margin: 2vmin auto;
-        text-decoration: none;
+        min-width: 220px;
+        max-width: 98vw;
+        width: 90vw;
+        min-height: 0;
     }
 }
