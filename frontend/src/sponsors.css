@@ -284,6 +284,39 @@
     display: block;
 }
 
+.sponsor-email-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3vw auto 2vw auto;    /* Center horizontally with auto margins */
+  padding: 0.3em 0.8em;
+  font-size: 3em;
+  border-radius: 1em;
+  background-image: linear-gradient(0.25turn, #e2aa39, #ffae26);
+  background-clip: text;
+  color: transparent !important;
+  box-shadow: 0 0 16px 0 #ffae26, inset 0 0 0 3px #ffae26;
+  font-family: "Changa One", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  min-width: 180px;
+  max-width: 60vw;
+  transition: text 0.4s, background 0.4s, color 0.4s, box-shadow 0.4s;
+  text-decoration: none;
+}
+
+
+.sponsor-email-button:hover,
+.sponsor-email-button:focus {
+  background: linear-gradient(0.25turn, #ffae26, #e2aa39);
+  color: #131313 !important;
+  box-shadow: 0 4px 24px #ffae26;
+  transition: text 0.4s, background 0.4s, color 0.4s, box-shadow 0.4s;
+  text-decoration: none;
+}
+
+/* Responsive tweaks */
 @media (max-width: 900px) {
     .sponsorship-levels {
         flex-direction: column;
