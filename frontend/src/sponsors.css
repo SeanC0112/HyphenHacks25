@@ -271,17 +271,23 @@
     line-height: 1.6;
     margin: 0 auto;
     padding: 0 0.5em;
-    text-align: center;
+    text-align: left;              /* Make text align left for bullets */
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;           /* Center the whole list horizontally */
+    list-style: disc inside;       /* Bullets inside, next to text */
+    width: 100%;
+    max-width: 90%;
 }
 
-.sponsorship-level-description br {
-    margin-bottom: 0.5em;
-    content: "";
-    display: block;
+.sponsorship-level-description li {
+    margin-bottom: 0.4em;
+    padding-left: 0.2em;
+    display: list-item;
+    text-align: center;              /* Ensure each li is left-aligned */
+    width: 100%;
 }
 
 .sponsor-email-button {

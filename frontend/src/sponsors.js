@@ -32,13 +32,13 @@ function SponsorCardBronze({ sponsor }) {
 }
 
 const SponsorData = [
-    {
-        name: "Lick-Wilmerding",
-        tier: "Gold",
-        logo: "logo.svg",
-        description: "A private school with public purpose, Lick-Wilmerding High School develops the head, heart, and hands of highly motivated students from all walks of life, inspiring them to become lifelong learners who contribute to the world with confidence and compassion.",
-        link: "https://lwhs.org"
-    },
+    // {
+    //     name: "Lick-Wilmerding",
+    //     tier: "Gold",
+    //     logo: "logo.svg",
+    //     description: "A private school with public purpose, Lick-Wilmerding High School develops the head, heart, and hands of highly motivated students from all walks of life, inspiring them to become lifelong learners who contribute to the world with confidence and compassion.",
+    //     link: "https://lwhs.org"
+    // },
 ]
 
 const Sponsors = forwardRef((props, ref) => (
@@ -47,6 +47,10 @@ const Sponsors = forwardRef((props, ref) => (
         <div className="sponsor-list">
             <h2 className="sponsor-tier-title gold">Gold Tier</h2>
             <div className="gold-sponsors">
+                <a href="https://lwhs.org" target="_blank" rel="noopener noreferrer" className="sponsor-card gold">
+                    <img src='logo.svg' alt='Lick-Wilmerding' className="sponsor-logo" />
+                    <p className="sponsor-description">A private school with public purpose, Lick-Wilmerding High School develops the head, heart, and hands of highly motivated students from all walks of life, inspiring them to become lifelong learners who contribute to the world with confidence and compassion.</p>
+                </a>
                 {SponsorData.filter(sponsor => sponsor.tier === "Gold").map((sponsor, index) => (
                     <SponsorCardGold key={index} sponsor={sponsor} />
                 ))}
@@ -77,30 +81,30 @@ const Sponsors = forwardRef((props, ref) => (
                     <div className="sponsorship-level bronze">
                         <h4 className="sponsorship-level-title">Bronze</h4>
                         <p className="sponsorship-level-price">$100+</p>
-                        <p className="sponsorship-level-description">
-                            Logo on event website<br />
-                            Logo on sponsorship slide in opening and closing ceremonies<br />
-                        </p>
+                        <ul className="sponsorship-level-description">
+                            <li>Logo on event website</li>
+                            <li>Logo on sponsorship slides</li>
+                        </ul>
                     </div>
                     <div className="sponsorship-level silver">
                         <h4 className="sponsorship-level-title">Silver</h4>
                         <p className="sponsorship-level-price">$500+</p>
-                        <p className="sponsorship-level-description">
-                            Everything in the Bronze Tier<br />
-                            Brief description along with logo on website and slides<br />
-                            Shoutout on event social media<br />
-                            logo feautured on event merch
-                        </p>
+                        <ul className="sponsorship-level-description">
+                            <li>Everything in the Bronze Tier</li>
+                            <li>Brief description along with logo on website and slides</li>
+                            <li>Shoutout on event social media</li>
+                            <li>Logo featured on event merch</li>
+                        </ul>
                     </div>
                     <div className="sponsorship-level gold">
                         <h4 className="sponsorship-level-title">Gold</h4>
                         <p className="sponsorship-level-price">$1000+</p>
-                        <p className="sponsorship-level-description">
-                            Everyting in Silver Tier<br />
-                            Workshop about company product<br />
-                            Speaker during opening ceremony<br />
-                            Paragraph in closing email to all participants
-                        </p>
+                        <ul className="sponsorship-level-description">
+                            <li>Everyting in Silver Tier</li>
+                            <li>Workshop about company product</li>
+                            <li>Speaker during opening ceremony</li>
+                            <li>Paragraph in closing email to all participants</li>
+                        </ul>
                     </div>
                 </div>
             </div>
