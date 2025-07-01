@@ -33,7 +33,7 @@ function FAQItem({ question, answer }) {
 const faqData = [
     {
         question: "Who can participate?",
-        answer: "Any high school student in the Bay Area is welcome to join Hyphen-Hacks."
+        answer: "Any high school student in the Bay Area is welcome to join Hyphen-Hacks. However, everyone under 18 must sign a liability waiver."
     },
     {
         question: "Do I need coding experience?",
