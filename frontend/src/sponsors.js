@@ -101,7 +101,7 @@ const Sponsors = forwardRef((props, ref) => {
                             <h4 className="sponsorship-level-title">Gold</h4>
                             <p className="sponsorship-level-price">$1000+</p>
                             <ul className="sponsorship-level-description">
-                                <li>Everyting in Silver Tier</li>
+                                <li>Everything in Silver Tier</li>
                                 <li>Workshop about company product</li>
                                 <li>Speaker during opening ceremony</li>
                                 <li>Paragraph in closing email to all participants</li>
