@@ -48,12 +48,16 @@ const faqData = [
         answer: "Hyphen-Hacks is completely free for all participants, including meals and snacks."
     },
     {
-        question: "What should I bring?",
-        answer: "Bring a laptop, charger, water bottle, and your creativity! We'll provide food, drinks, and WiFi."
+        question: "Where is it?",
+        answer: "755 Ocean Ave, San Francisco, California, 94112"
     },
     {
         question: "How do I get there?",
         answer: "The event is at Lick-Wilmerding High School, right next to Balboa Park BART and several Muni and bus lines."
+    },
+    {
+        question: "What should I bring?",
+        answer: "Bring a laptop, charger, water bottle, and your creativity! We'll provide food, drinks, and WiFi."
     },
     {
         question: "When will the tracks be announced?",
