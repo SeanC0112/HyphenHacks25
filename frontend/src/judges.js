@@ -28,7 +28,7 @@ const JudgesData = [
     {
         name: "Brenda Ng",
         image: "/brenda.jpg",
-        bio: "Applied AI/ML Exec Director at JPMorgan Chase. Works with LLMs + knowledge graphs for fintech recommendations. Passionate about responsible generative AI.",
+        bio: "Applied AI/ML Exec Director at JPMorganChase. Works with LLMs + knowledge graphs for fintech recommendations. Passionate about responsible generative AI.",
         linkedin: "https://www.linkedin.com/in/brenda-ng/"
     }
 ];
