@@ -45,7 +45,6 @@
     transition: transform 0.2s, box-shadow 0.2s;
     justify-content: space-around;
     text-align: center;
-    width: 100%;
 }
 .judge-item:hover {
     transform: scale(1.04);
