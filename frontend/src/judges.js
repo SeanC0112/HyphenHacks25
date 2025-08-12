@@ -5,17 +5,15 @@ const JudgeItem = ({item}) => {
     return (
         <div className="judge-item">
             <img src={item.image} alt={item.name} className="judge-image" />
-            <div className="judge-info">
-                <h3 className="judge-name">{item.name}</h3>
-                <p className="judge-bio">{item.bio}</p>
-                <a
-                  href={item.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                    <img src="/linkedin.png"  className="judge-linkedin" />
-                </a>
-            </div>
+            <h3 className="judge-name">{item.name}</h3>
+            <p className="judge-bio">{item.bio}</p>
+            <a
+                href={item.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <img src="/linkedin.png"  className="judge-linkedin" />
+            </a>
         </div>
     );
 }
@@ -26,6 +24,12 @@ const JudgesData = [
         image: "/thijs.jpg",
         bio: "Building video models at LMArena. Previous SWE at Discord. LWHS Class of '24!",
         linkedin: "https://www.linkedin.com/in/thijsdev/"
+    },
+    {
+        name: "Brenda Ng",
+        image: "/brenda.jpg",
+        bio: "Applied AI/ML Exec Director at JPMorgan Chase. Works with LLMs + knowledge graphs for fintech recommendations. Passionate about responsible generative AI.",
+        linkedin: "https://www.linkedin.com/in/brenda-ng/"
     }
 ];
 
