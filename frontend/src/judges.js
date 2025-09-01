@@ -30,6 +30,12 @@ const JudgesData = [
         image: "/brenda.jpg",
         bio: "Applied AI/ML Exec Director at JPMorganChase. Works with LLMs + knowledge graphs for fintech recommendations. Passionate about responsible generative AI.",
         linkedin: "https://www.linkedin.com/in/brenda-ng/"
+    }, 
+    {
+        name: "Nena Bains,",
+        image: "/nena.jpg",
+        bio: "Patent attorney working with start ups for the last 25 years, including new technoloiges from UCSF and Stanford incubators.  Technical experience in all things mechancial, electrical, and software/AI as it relates to the human body and a deep bench in financing diligence.",
+        linkedin: "https://www.linkedin.com/in/nena-bains-jd-90879/"
     }
 ];
 
