@@ -25,12 +25,12 @@ const JudgesData = [
         bio: "Building video models at LMArena. Previous SWE at Discord. LWHS Class of '24!",
         linkedin: "https://www.linkedin.com/in/thijsdev/"
     },
-    {
-        name: "Brenda Ng",
-        image: "/brenda.jpg",
-        bio: "Applied AI/ML Exec Director at JPMorganChase. Works with LLMs + knowledge graphs for fintech recommendations. Passionate about responsible generative AI.",
-        linkedin: "https://www.linkedin.com/in/brenda-ng/"
-    }, 
+    // {
+    //     name: "Brenda Ng",
+    //     image: "/brenda.jpg",
+    //     bio: "Applied AI/ML Exec Director at JPMorganChase. Works with LLMs + knowledge graphs for fintech recommendations. Passionate about responsible generative AI.",
+    //     linkedin: "https://www.linkedin.com/in/brenda-ng/"
+    // }, 
     {
         name: "Nena Bains,",
         image: "/nena.jpg",
