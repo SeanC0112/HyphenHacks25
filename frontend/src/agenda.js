@@ -20,11 +20,11 @@ const Items = [
         title: "Opening Ceremony",
     },
     {
-        time: "10:00 AM",
+        time: "9:40 AM",
         title: "Team Formation",
     },
     {
-        time: "10:15 AM",
+        time: "9:45 AM",
         title: "Hacking Begins!",
     },
     {
@@ -40,7 +40,7 @@ const Items = [
         title: "Second Workshop",
     },
     {
-        time: "6:30 PM",
+        time: "5:30 PM",
         title: "Dinner",
     },
     {
