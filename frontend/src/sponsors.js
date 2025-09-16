@@ -16,7 +16,7 @@ function SponsorCardSilver({ sponsor }) {
     return (
         <a href={sponsor.link} target="_blank" rel="noopener noreferrer" className="sponsor-card silver">
             <img src={sponsor.logo} alt={`${sponsor.name} logo`} className="sponsor-logo" />
-            <p className="sponsor-title">{sponsor.name}</p>
+            {/* <p className="sponsor-title">{sponsor.name}</p> */}
             <p className="sponsor-description">{sponsor.description}</p>
         </a>
     );
@@ -32,13 +32,13 @@ function SponsorCardBronze({ sponsor }) {
 }
 
 const SponsorData = [
-    // {
-    //     name: "Lick-Wilmerding",
-    //     tier: "Gold",
-    //     logo: "logo.svg",
-    //     description: "A private school with public purpose, Lick-Wilmerding High School develops the head, heart, and hands of highly motivated students from all walks of life, inspiring them to become lifelong learners who contribute to the world with confidence and compassion.",
-    //     link: "https://lwhs.org"
-    // },
+    {
+        name: "Art of Problem Solving",
+        tier: "Silver",
+        logo: "aops.png",
+        description: "Training Today's Brightest Minds to Solve Tomorrow's Problems. Art of Problem Solving creates educational materials for motivated students in grades 1–12. Their books, classes, and online resources help students become creative, successful problem solvers.",
+        link: "https://artofproblemsolving.com/company"
+    }
 ]
 
 const Sponsors = forwardRef((props, ref) => {

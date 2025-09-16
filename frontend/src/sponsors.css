@@ -69,6 +69,18 @@
     overflow-y: visible;
 }
 
+.silver-sponsors {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    padding: 0;
+    scrollbar-width: none; /* Firefox */
+    overflow-x: auto;
+    overflow-y: visible;
+}
+
 /* Card base style */
 .sponsor-card {
     display: flex;
@@ -86,9 +98,16 @@
     transition: transform 0.18s, box-shadow 0.18s;
 }
 
-.sponsor-card:hover {
+.sponsor-card.gold:hover {
     transform: scale(1.03);
     box-shadow: 0 8px 32px 0 #ffae26, 0 0 0 4px rgba(255,255,255,0.08) inset;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.sponsor-card.silver:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 32px 0 #f0f0f0, 0 0 0 4px rgba(255,255,255,0.08) inset;
     z-index: 2;
     cursor: pointer;
 }
