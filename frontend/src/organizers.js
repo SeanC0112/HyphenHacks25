@@ -39,6 +39,11 @@ const OrganizersData = [
         title: "Outreach Lead and Graphic Designer",
     },
     {
+        name: "Noah Ahn",
+        image: "/noah.jpg",
+        title: "Corgi"
+    },
+    {
         name: "Aurora Huang",
         image: "/aurora.jpg",
         title: "Logistics Lead",
