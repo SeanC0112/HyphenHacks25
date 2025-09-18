@@ -36,6 +36,11 @@ const JudgesData = [
         image: "/nena.jpg",
         bio: "Patent attorney working with start ups for the last 25 years, including new technoloiges from UCSF and Stanford incubators.  Technical experience in all things mechancial, electrical, and software/AI as it relates to the human body and a deep bench in financing diligence.",
         linkedin: "https://www.linkedin.com/in/nena-bains-jd-90879/"
+    },
+    {
+        name: "Shane Lee",
+        image: "/shane.png",
+        bio: "AI/ML Engineer working in the financial analytics space building risk models for mortgage loans.",
     }
 ];
 
