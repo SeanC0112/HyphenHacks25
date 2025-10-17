@@ -27,12 +27,12 @@ const OrganizersData = [
         title: "Executive Director and Software Lead",
         linkedin: "https://www.linkedin.com/in/sean-coleman-4731a5359/"
     },
-    {
-        name: "Sloane Marciniak-Velazco",
-        image: "/sloane.jpeg",
-        title: "Corporate Relations Lead",
-        linkedin: "https://www.linkedin.com/in/sloane-m-1740a32ba/",
-    },
+    // {
+    //     name: "Sloane Marciniak-Velazco",
+    //     image: "/sloane.jpeg",
+    //     title: "Corporate Relations Lead",
+    //     linkedin: "https://www.linkedin.com/in/sloane-m-1740a32ba/",
+    // },
     {
         name: "Eddie Binetti",
         image: "/eddie.png",
