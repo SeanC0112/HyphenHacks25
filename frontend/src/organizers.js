@@ -27,12 +27,6 @@ const OrganizersData = [
         title: "Executive Director and Software Lead",
         linkedin: "https://www.linkedin.com/in/sean-coleman-4731a5359/"
     },
-    // {
-    //     name: "Sloane Marciniak-Velazco",
-    //     image: "/sloane.jpeg",
-    //     title: "Corporate Relations Lead",
-    //     linkedin: "https://www.linkedin.com/in/sloane-m-1740a32ba/",
-    // },
     {
         name: "Eddie Binetti",
         image: "/eddie.png",
@@ -47,7 +41,13 @@ const OrganizersData = [
         name: "Aurora Huang",
         image: "/aurora.jpg",
         title: "Logistics Lead",
-    }
+    },
+    {
+        name: "Sloane Marciniak-Velazco",
+        image: "/sloane.jpeg",
+        title: "Corporate Relations Lead",
+        linkedin: "https://www.linkedin.com/in/sloane-m-1740a32ba/",
+    },
 ];
 
 const Organizers = React.forwardRef((props, ref) => (
