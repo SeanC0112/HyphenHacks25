@@ -10,7 +10,11 @@ const OrganizerItem = ({ item }) => {
         <p className="organizer-title">{item.title}</p>
         {item.linkedin ? (
           <a href={item.linkedin} target="_blank" rel="noopener noreferrer">
-            <img src="/linkedin.png" className="organizer-linkedin" />
+            <img
+              src="/linkedin.png"
+              alt="LinkedIn"
+              className="organizer-linkedin"
+            />
           </a>
         ) : null}
       </div>

@@ -8,7 +8,7 @@ const JudgeItem = ({ item }) => {
       <h3 className="judge-name">{item.name}</h3>
       <p className="judge-bio">{item.bio}</p>
       <a href={item.linkedin} target="_blank" rel="noopener noreferrer">
-        <img src="/linkedin.png" className="judge-linkedin" />
+        <img src="/linkedin.png" alt="LinkedIn" className="judge-linkedin" />
       </a>
     </div>
   );
