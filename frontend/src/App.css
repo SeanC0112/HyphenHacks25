@@ -6,21 +6,21 @@
   /* min-height: 40px; */
   height: 5vmin; /* Adjusted for smaller size */
   pointer-events: none;
-  margin-left: 16px;      /* Add spacing to the right of the logo */
+  margin-left: 16px; /* Add spacing to the right of the logo */
   opacity: 1;
   /* background-color: #2F4858;
   color: white; */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 .App-header {
   background-color: rgba(0, 0, 0, 0.75);
   /* min-height: 60px; */
   height: 5vh;
   min-height: 50px;
   display: flex;
-  flex-direction: row;      /* Change to row */
-  align-items: center;      /* Vertically center items */
+  flex-direction: row; /* Change to row */
+  align-items: center; /* Vertically center items */
   justify-content: flex-start; /* Align items to the left */
   font-size: calc(10px + 2vmin);
   color: white;
@@ -28,27 +28,39 @@
 }
 
 .App-signup-header {
-  transition: text 0.4s, background 0.4s, color 0.4s, box-shadow 0.4s;
+  transition:
+    text 0.4s,
+    background 0.4s,
+    color 0.4s,
+    box-shadow 0.4s;
   background-image: linear-gradient(0.25turn, #e2aa39, #ffae26);
   background-clip: text;
   color: transparent !important;
-  box-shadow: 0px 0px 10px #ffae26, inset 0 0 0 3px #ffae26;
+  box-shadow:
+    0px 0px 10px #ffae26,
+    inset 0 0 0 3px #ffae26;
   font-family: "Changa One", sans-serif;
   font-weight: 700;
   border-radius: 1em;
   padding: 0 2vw;
   margin: 2vw;
-  height: 2.5vw;                /* Match .App-button height */
+  height: 2.5vw; /* Match .App-button height */
   /* min-height: 32px;           Ensures it's not too small */
   display: flex;
   align-items: center;
   font-size: 1em;
-  box-shadow: 0px 0px 10px #ffae26, inset 0 0 0 3px #ffae26;
+  box-shadow:
+    0px 0px 10px #ffae26,
+    inset 0 0 0 3px #ffae26;
   cursor: pointer;
 }
 
 .App-signup-header:hover {
-  transition: text 0.4s, background 0.4s, color 0.4s, box-shadow 0.4s;
+  transition:
+    text 0.4s,
+    background 0.4s,
+    color 0.4s,
+    box-shadow 0.4s;
   background: linear-gradient(0.25turn, #ffae26, #e2aa39);
   color: #131313 !important;
   box-shadow: none;
@@ -58,36 +70,45 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin: 3vw auto 2vw auto;    /* Center horizontally with auto margins */
+  margin: 3vw auto 2vw auto; /* Center horizontally with auto margins */
   padding: 0.3em 0.8em;
   font-size: 5em;
   border-radius: 1em;
   background-image: linear-gradient(0.25turn, #e2aa39, #ffae26);
   background-clip: text;
   color: transparent !important;
-  box-shadow: 0 0 16px 0 #ffae26, inset 0 0 0 3px #ffae26;
+  box-shadow:
+    0 0 16px 0 #ffae26,
+    inset 0 0 0 3px #ffae26;
   font-family: "Changa One", sans-serif;
   font-weight: 700;
   cursor: pointer;
   text-align: center;
   min-width: 180px;
   max-width: 90vw;
-  transition: text 0.4s, background 0.4s, color 0.4s, box-shadow 0.4s;
+  transition:
+    text 0.4s,
+    background 0.4s,
+    color 0.4s,
+    box-shadow 0.4s;
 }
 
 .App-signup:hover {
   background: linear-gradient(0.25turn, #ffae26, #e2aa39);
   color: #131313 !important;
   box-shadow: 0 4px 24px #ffae26;
-  transition: text 0.4s, background 0.4s, color 0.4s, box-shadow 0.4s;
+  transition:
+    text 0.4s,
+    background 0.4s,
+    color 0.4s,
+    box-shadow 0.4s;
 }
-
 
 .App-header-buttons {
   margin-left: auto;
   display: flex;
   padding: 2vw;
-  gap: 1vw; 
+  gap: 1vw;
 }
 
 .App-button {
@@ -106,14 +127,14 @@
 }
 
 .App-button:hover {
-   background-image: linear-gradient(0.25turn,#e2aa39, #D78D1D);
+  background-image: linear-gradient(0.25turn, #e2aa39, #d78d1d);
   color: transparent;
   background-clip: text;
-  -webkit-background-clip: text;        /* Add this for Safari/Chrome */
+  -webkit-background-clip: text; /* Add this for Safari/Chrome */
   -webkit-text-fill-color: transparent; /* Add this for Safari/Chrome */
   position: relative;
   z-index: 1;
-  filter: drop-shadow(0 0 1.5vh #E4A039);
+  filter: drop-shadow(0 0 1.5vh #e4a039);
 }
 
 .title-row {
@@ -121,10 +142,10 @@
   flex-direction: column;
   align-items: center;
   height: 93.5vh;
-  min-height: calc(fit-content + 50px);
+  min-height: fit-content + 50px;
   justify-content: flex-start; /* default, but can be omitted */
   position: relative;
-  margin:0;
+  margin: 0;
 }
 
 .App-title-top {
@@ -133,10 +154,10 @@
   font-style: normal;
   font-size: 28vmin; /* Slightly smaller */
   /* color: #E4A039; */
-  background-image: linear-gradient(0.25turn,#e2aa39, #D78D1D);
+  background-image: linear-gradient(0.25turn, #e2aa39, #d78d1d);
   color: transparent;
   background-clip: text;
-  -webkit-background-clip: text;        /* Add this for Safari/Chrome */
+  -webkit-background-clip: text; /* Add this for Safari/Chrome */
   -webkit-text-fill-color: transparent; /* Add this for Safari/Chrome */
   position: relative;
   z-index: 1;
@@ -144,7 +165,7 @@
   line-height: 1;
   margin: 0;
   padding: 0;
-  filter: drop-shadow(0 0 2vh #E4A039);
+  filter: drop-shadow(0 0 2vh #e4a039);
 }
 
 .App-title-bottom {
@@ -153,10 +174,10 @@
   font-style: normal;
   font-size: 28vmin; /* Slightly smaller */
   /* color: #E4A039; */
-  background-image: linear-gradient(0.25turn,#e2aa39, #D78D1D);
+  background-image: linear-gradient(0.25turn, #e2aa39, #d78d1d);
   color: transparent;
   background-clip: text;
-  -webkit-background-clip: text;        /* Add this for Safari/Chrome */
+  -webkit-background-clip: text; /* Add this for Safari/Chrome */
   -webkit-text-fill-color: transparent; /* Add this for Safari/Chrome */
   position: relative;
   z-index: 1;
@@ -164,7 +185,7 @@
   line-height: 1;
   margin: 0;
   padding: 0;
-  filter: drop-shadow(0 0 2vh #E4A039);
+  filter: drop-shadow(0 0 2vh #e4a039);
 }
 
 .App-hyphen {
@@ -172,10 +193,10 @@
   font-weight: 300;
   font-style: normal;
   font-size: 28vmin;
-  background-image: linear-gradient(0.25turn,#e2aa39, #D78D1D);
+  background-image: linear-gradient(0.25turn, #e2aa39, #d78d1d);
   color: transparent;
   background-clip: text;
-  -webkit-background-clip: text;        /* Add this for Safari/Chrome */
+  -webkit-background-clip: text; /* Add this for Safari/Chrome */
   -webkit-text-fill-color: transparent; /* Add this for Safari/Chrome */
   position: relative;
   z-index: 1;
@@ -183,7 +204,7 @@
   line-height: 1;
   margin: 0;
   padding: 0;
-  filter: drop-shadow(0 0 2vh #E4A039);
+  filter: drop-shadow(0 0 2vh #e4a039);
 }
 
 .App-intro-footer {
@@ -208,28 +229,28 @@
 }
 
 .App-intro-footer-left {
-  background-image: linear-gradient(0.25turn,#e2aa39, #D78D1D);
+  background-image: linear-gradient(0.25turn, #e2aa39, #d78d1d);
   color: transparent;
   background-clip: text;
-  -webkit-background-clip: text;        /* Add this for Safari/Chrome */
+  -webkit-background-clip: text; /* Add this for Safari/Chrome */
   -webkit-text-fill-color: transparent; /* Add this for Safari/Chrome */
   position: relative;
   z-index: 1;
-  filter: drop-shadow(0 0 1.5vh #E4A039);
+  filter: drop-shadow(0 0 1.5vh #e4a039);
   text-align: left;
   flex: 1;
   margin-right: auto;
 }
 
 .App-intro-footer-right {
-  background-image: linear-gradient(0.25turn,#e2aa39, #D78D1D);
+  background-image: linear-gradient(0.25turn, #e2aa39, #d78d1d);
   color: transparent;
   background-clip: text;
-  -webkit-background-clip: text;        /* Add this for Safari/Chrome */
+  -webkit-background-clip: text; /* Add this for Safari/Chrome */
   -webkit-text-fill-color: transparent; /* Add this for Safari/Chrome */
   position: relative;
   z-index: 1;
-  filter: drop-shadow(0 0 1.5vh #E4A039);
+  filter: drop-shadow(0 0 1.5vh #e4a039);
   text-align: right;
   flex: 1;
   margin-left: auto;
@@ -278,10 +299,9 @@
 
 .App-mobile-text {
   font-family: "Changa One", sans-serif;
-    font-size: 1em;
-    color: #ffae26;
-    margin: 0.7em;
-    font-weight: 500;
-    letter-spacing: 0.01em;
+  font-size: 1em;
+  color: #ffae26;
+  margin: 0.7em;
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
-
