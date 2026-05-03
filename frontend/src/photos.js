@@ -1,12 +1,12 @@
 import React, { useRef, useEffect, useState } from "react";
-import './photos.css';
+import "./photos.css";
 
 let numPhotos = 11;
 // tests
 const photoList = [];
 for (let i = 0; i < numPhotos; i++) {
   photoList.push(`/photos/${i + 1}.JPG`);
-  if(i === 10) {
+  if (i === 10) {
     photoList[i] = `/photos/${i + 1}.jpg`;
   }
 }
@@ -23,13 +23,13 @@ function Photos() {
 
   // Update widths on load/resize
   const updateWidths = () => {
-    setImgWidths(imgRefs.current.map(img => img ? img.offsetWidth : 0));
+    setImgWidths(imgRefs.current.map((img) => (img ? img.offsetWidth : 0)));
   };
 
   useEffect(() => {
     updateWidths();
-    window.addEventListener('resize', updateWidths);
-    return () => window.removeEventListener('resize', updateWidths);
+    window.addEventListener("resize", updateWidths);
+    return () => window.removeEventListener("resize", updateWidths);
   }, []);
 
   // Duplicate the photoList 3 times for seamless looping
@@ -45,13 +45,13 @@ function Photos() {
       row.scrollLeft = singleListWidth;
     };
 
-    if ([...row.querySelectorAll('img')].every(img => img.complete)) {
+    if ([...row.querySelectorAll("img")].every((img) => img.complete)) {
       handleImagesLoaded();
     } else {
       let loaded = 0;
-      const imgs = row.querySelectorAll('img');
-      imgs.forEach(img => {
-        img.addEventListener('load', () => {
+      const imgs = row.querySelectorAll("img");
+      imgs.forEach((img) => {
+        img.addEventListener("load", () => {
           loaded++;
           if (loaded === imgs.length) handleImagesLoaded();
         });
@@ -67,22 +67,26 @@ function Photos() {
       if (row.scrollLeft < singleListWidth - half) {
         isJumping = true;
         row.scrollLeft += singleListWidth;
-        setTimeout(() => { isJumping = false; }, 0);
+        setTimeout(() => {
+          isJumping = false;
+        }, 0);
       } else if (row.scrollLeft >= singleListWidth * 2 - half) {
         isJumping = true;
         row.scrollLeft -= singleListWidth;
-        setTimeout(() => { isJumping = false; }, 0);
+        setTimeout(() => {
+          isJumping = false;
+        }, 0);
       }
     };
 
-    row.addEventListener('scroll', handleScroll);
+    row.addEventListener("scroll", handleScroll);
 
     const autoScroll = setInterval(() => {
       row.scrollLeft += 1; // Adjust speed here
     }, 16);
 
     return () => {
-      row.removeEventListener('scroll', handleScroll);
+      row.removeEventListener("scroll", handleScroll);
       clearInterval(autoScroll);
     };
   }, [imgWidths]);
@@ -91,18 +95,15 @@ function Photos() {
     <div className="photos">
       <h1 className="photo-title">Previous Hackathons</h1>
       {/* <hr className="photo-break" /> */}
-      <div
-        className="photo-row no-pointer"
-        ref={rowRef}
-      >
+      <div className="photo-row no-pointer" ref={rowRef}>
         {displayList.map((src, idx) => (
           <img
             key={idx}
             src={src}
-            alt={`Photo ${idx % photoList.length + 1}`}
+            alt={`${(idx % photoList.length) + 1}`}
             className="photo-img"
             draggable={false}
-            ref={el => setImgRef(el, idx)}
+            ref={(el) => setImgRef(el, idx)}
             onLoad={updateWidths}
           />
         ))}
