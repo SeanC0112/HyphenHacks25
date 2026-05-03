@@ -1,47 +1,47 @@
 .about {
-    padding: 5vmin;
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: #131313;
-    color: white
+  padding: 5vmin;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #131313;
+  color: white;
 }
 
 .about-title {
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 8vmin;
-    background-image: linear-gradient(0.25turn,#ffffff, #DDDDDD);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;        /* Add this for Safari/Chrome */
-    -webkit-text-fill-color: transparent; /* Add this for Safari/Chrome */
-    position: relative;
-    z-index: 1;
-    /* top: 0.3em; */
-    line-height: 1;
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 8vmin;
+  background-image: linear-gradient(0.25turn, #ffffff, #dddddd);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; /* Add this for Safari/Chrome */
+  -webkit-text-fill-color: transparent; /* Add this for Safari/Chrome */
+  position: relative;
+  z-index: 1;
+  /* top: 0.3em; */
+  line-height: 1;
 }
 
 .about-intro {
-    font-size: 1.3em;
-    margin: 2vmin auto 4vmin auto;
-    color: #fff;
-    max-width: 700px;
-    line-height: 1.5;
+  font-size: 1.3em;
+  margin: 2vmin auto 4vmin auto;
+  color: #fff;
+  max-width: 700px;
+  line-height: 1.5;
 }
 
 .about-content {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin: 0 auto 0 auto;
-    gap: 2.5vmin;
-    /* max-width: 700px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 auto 0 auto;
+  gap: 2.5vmin;
+  /* max-width: 700px; */
 }
 
 .about-item {
-  background: rgba(255,255,255,0.06);
+  background: rgba(255, 255, 255, 0.06);
   border-radius: 1vw;
   padding: 2vmin 2.5vmin;
   box-shadow: 0 2px 8px #0002;
@@ -54,11 +54,11 @@
 }
 
 .about-subtitle {
-    font-size: 1.5vw;
-    font-weight: 700;
-    margin-bottom: 0.5em;
-    color: #ffae26;
-    word-break: break-word;
+  font-size: 1.5vw;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  color: #ffae26;
+  word-break: break-word;
   hyphens: auto;
 }
 

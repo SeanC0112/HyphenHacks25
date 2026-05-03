@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react';
-import * as THREE from 'three';
-import GLOBE from 'vanta/dist/vanta.globe.min';
+import React, { useEffect, useRef } from "react";
+import * as THREE from "three";
+import GLOBE from "vanta/dist/vanta.globe.min";
 
 // had to import vanta release 0.5.24 and three release 0.121.0
 
@@ -16,13 +16,13 @@ function Background() {
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
         backgroundColor: 0x141312,
         color: 0xff871f,
-        color2: 0xffae26
+        color2: 0xffae26,
       });
     }
     return () => {
@@ -37,12 +37,12 @@ function Background() {
     <div
       ref={vantaRef}
       style={{
-        height: '100vh',
-        width: '100vw',
-        position: 'fixed',
+        height: "100vh",
+        width: "100vw",
+        position: "fixed",
         top: 0,
         left: 0,
-        zIndex: -1
+        zIndex: -1,
       }}
     />
   );

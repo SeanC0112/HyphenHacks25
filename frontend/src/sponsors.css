@@ -1,121 +1,142 @@
 .sponsors {
-    padding: 5vmin;
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: #131313;
-    color: white
+  padding: 5vmin;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #131313;
+  color: white;
 }
 
 .sponsors-title {
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 8vmin;
-    background-image: linear-gradient(0.25turn,#ffffff, #DDDDDD);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;        /* Add this for Safari/Chrome */
-    -webkit-text-fill-color: transparent; /* Add this for Safari/Chrome */
-    position: relative;
-    z-index: 1;
-    /* top: 0.3em; */
-    line-height: 1;
-    margin-bottom: 0;
-    padding-bottom: 0;
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 8vmin;
+  background-image: linear-gradient(0.25turn, #ffffff, #dddddd);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; /* Add this for Safari/Chrome */
+  -webkit-text-fill-color: transparent; /* Add this for Safari/Chrome */
+  position: relative;
+  z-index: 1;
+  /* top: 0.3em; */
+  line-height: 1;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .sponsor-list {
-    margin-top: 0;
-    padding-top: 0;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .sponsor-tier-title {
-
-    color: transparent;
-    font-family: "Raleway", sans-serif;
-    font-weight: 750;
-    font-size: 5vmin;
-    font-style: normal;
-    background-clip: text;
-    -webkit-background-clip: text;        /* Add this for Safari/Chrome */
-    -webkit-text-fill-color: transparent; /* Add this for Safari/Chrome */
-    position: relative;
-    z-index: 1;
+  color: transparent;
+  font-family: "Raleway", sans-serif;
+  font-weight: 750;
+  font-size: 5vmin;
+  font-style: normal;
+  background-clip: text;
+  -webkit-background-clip: text; /* Add this for Safari/Chrome */
+  -webkit-text-fill-color: transparent; /* Add this for Safari/Chrome */
+  position: relative;
+  z-index: 1;
 }
 
 .sponsor-tier-title.gold {
-    background-image: linear-gradient(0.25turn,#e2aa39, #D78D1D);
-    filter: drop-shadow(0 0 2vh #E4A039);
+  background-image: linear-gradient(0.25turn, #e2aa39, #d78d1d);
+  filter: drop-shadow(0 0 2vh #e4a039);
 }
 
 .sponsor-tier-title.silver {
-    background-image: linear-gradient(0.25turn,#C0C0C0, #A9A9A9);
+  background-image: linear-gradient(0.25turn, #c0c0c0, #a9a9a9);
 }
 
 .sponsor-tier-title.bronze {
-    background-image: linear-gradient(0.25turn,#cd7f32, #b87333);
+  background-image: linear-gradient(0.25turn, #cd7f32, #b87333);
 }
 
 .gold-sponsors {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2vw;
-    padding: 0;
-    scrollbar-width: none; /* Firefox */
-    overflow-x: auto;
-    overflow-y: visible;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  padding: 0;
+  scrollbar-width: none; /* Firefox */
+  overflow-x: auto;
+  overflow-y: visible;
 }
 
 .silver-sponsors {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2vw;
-    padding: 0;
-    scrollbar-width: none; /* Firefox */
-    overflow-x: auto;
-    overflow-y: visible;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  padding: 0;
+  scrollbar-width: none; /* Firefox */
+  overflow-x: auto;
+  overflow-y: visible;
 }
 
 /* Card base style */
 .sponsor-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 15vw;
-    min-width: 180px;
-    max-width: 260px;
-    background: rgba(255,255,255,0.08);
-    border-radius: 1.2em;
-    box-shadow: 0 4px 24px 0 #0004, 0 0 0 4px rgba(255,255,255,0.04) inset;
-    padding: 2.5vmin 2vmin 2vmin 2vmin;
-    margin: 2vmin 1vw;
-    transition: transform 0.18s, box-shadow 0.18s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 15vw;
+  min-width: 180px;
+  max-width: 260px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 1.2em;
+  box-shadow:
+    0 4px 24px 0 #0004,
+    0 0 0 4px rgba(255, 255, 255, 0.04) inset;
+  padding: 2.5vmin 2vmin 2vmin 2vmin;
+  margin: 2vmin 1vw;
+  transition:
+    transform 0.18s,
+    box-shadow 0.18s;
 }
 
 .sponsor-card.gold:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 32px 0 #ffae26, 0 0 0 4px rgba(255,255,255,0.08) inset;
-    z-index: 2;
-    cursor: pointer;
+  transform: scale(1.03);
+  box-shadow:
+    0 8px 32px 0 #ffae26,
+    0 0 0 4px rgba(255, 255, 255, 0.08) inset;
+  z-index: 2;
+  cursor: pointer;
 }
 
 .sponsor-card.silver:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 32px 0 #f0f0f0, 0 0 0 4px rgba(255,255,255,0.08) inset;
-    z-index: 2;
-    cursor: pointer;
+  transform: scale(1.03);
+  box-shadow:
+    0 8px 32px 0 #f0f0f0,
+    0 0 0 4px rgba(255, 255, 255, 0.08) inset;
+  z-index: 2;
+  cursor: pointer;
 }
 
 /* Tier color accents */
 .sponsor-card.gold {
-    border: 2.5px solid #e2aa39;
-    background: linear-gradient(to right, #ffe7b3, #feebbc, #feefc6, #fef2cf, #fef6d9, #fef6d9, #fef6d9, #fef6d9, #fef2cf, #feefc6, #feebbc, #ffe7b3);
+  border: 2.5px solid #e2aa39;
+  background: linear-gradient(
+    to right,
+    #ffe7b3,
+    #feebbc,
+    #feefc6,
+    #fef2cf,
+    #fef6d9,
+    #fef6d9,
+    #fef6d9,
+    #fef6d9,
+    #fef2cf,
+    #feefc6,
+    #feebbc,
+    #ffe7b3
+  );
 }
 
 .sponsor-card,
@@ -123,43 +144,71 @@
 .sponsor-card:active,
 .sponsor-card:focus,
 .sponsor-card:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .sponsor-card.silver {
-    border: 2.5px solid #b0b0b0;
-    background: linear-gradient(to right, #e0e0e0, #e4e4e4, #e8e8e8, #ececec, #f0f0f0, #f0f0f0, #f0f0f0, #f0f0f0, #ececec, #e8e8e8, #e4e4e4, #e0e0e0);
+  border: 2.5px solid #b0b0b0;
+  background: linear-gradient(
+    to right,
+    #e0e0e0,
+    #e4e4e4,
+    #e8e8e8,
+    #ececec,
+    #f0f0f0,
+    #f0f0f0,
+    #f0f0f0,
+    #f0f0f0,
+    #ececec,
+    #e8e8e8,
+    #e4e4e4,
+    #e0e0e0
+  );
 }
 
 .sponsor-card.bronze {
-    border: 2.5px solid #cd7f32;
-    background: linear-gradient(to right, #e3c7a1, #e8cead, #ecd5b9, #f0dcc6, #f4e3d2, #f4e3d2, #f4e3d2, #f4e3d2, #f0dcc6, #ecd5b9, #e8cead, #e3c7a1);
+  border: 2.5px solid #cd7f32;
+  background: linear-gradient(
+    to right,
+    #e3c7a1,
+    #e8cead,
+    #ecd5b9,
+    #f0dcc6,
+    #f4e3d2,
+    #f4e3d2,
+    #f4e3d2,
+    #f4e3d2,
+    #f0dcc6,
+    #ecd5b9,
+    #e8cead,
+    #e3c7a1
+  );
 }
 
 /* Sponsor logo */
 .sponsor-logo {
-    width: 80%;
-    height: auto;
-    max-height: 8vh;
-    object-fit: contain;
-    margin-bottom: 1.2vmin;
-    margin-top: 0.5vmin;
-    border-radius: 0.5em;
-    background: #fff2;
-    /* box-shadow: 0 2px 8px #0002; */
+  width: 80%;
+  height: auto;
+  max-height: 8vh;
+  object-fit: contain;
+  margin-bottom: 1.2vmin;
+  margin-top: 0.5vmin;
+  border-radius: 0.5em;
+  background: #fff2;
+  /* box-shadow: 0 2px 8px #0002; */
 }
 
 /* Sponsor name link */
 .sponsor-title {
-    font-family: "Changa One", sans-serif;
-    font-size: 1.3em;
-    color: #222;
-    margin: 0.5em 0 0.2em 0;
-    text-decoration: none;
-    background: none;
-    transition: color 0.2s;
-    text-align: center;
-    word-break: break-word;
+  font-family: "Changa One", sans-serif;
+  font-size: 1.3em;
+  color: #222;
+  margin: 0.5em 0 0.2em 0;
+  text-decoration: none;
+  background: none;
+  transition: color 0.2s;
+  text-align: center;
+  word-break: break-word;
 }
 
 /* .sponsor-title:hover {
@@ -169,188 +218,248 @@
 
 /* Sponsor description */
 .sponsor-description {
-    font-family: "Raleway", sans-serif;
-    font-size: 1em;
-    color: #333;
-    text-align: center;
-    margin: 0.5em 0 0 0;
-    line-height: 1.4;
-    min-height: 3em;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  color: #333;
+  text-align: center;
+  margin: 0.5em 0 0 0;
+  line-height: 1.4;
+  min-height: 3em;
 }
 
 /* Responsive tweaks */
 @media (max-width: 900px) {
-    .sponsor-card {
-        width: 220px;
-        /* min-width: 180px; */
-        max-width: 90vw;
-        margin: 2vmin auto;
-        text-decoration: none;
-    }
-    .gold-sponsors, .silver-sponsors, .bronze-sponsors {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
+  .sponsor-card {
+    width: 220px;
+    /* min-width: 180px; */
+    max-width: 90vw;
+    margin: 2vmin auto;
+    text-decoration: none;
+  }
+  .gold-sponsors,
+  .silver-sponsors,
+  .bronze-sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .sponsors-subtitle {
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 6vmin;
-    background-image: linear-gradient(0.25turn,#ffffff, #DDDDDD);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;        /* Add this for Safari/Chrome */
-    -webkit-text-fill-color: transparent; /* Add this for Safari/Chrome */
-    position: relative;
-    z-index: 1;
-    /* top: 0.3em; */
-    line-height: 1;
-    margin-bottom: 0;
-    padding-bottom: 0;
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6vmin;
+  background-image: linear-gradient(0.25turn, #ffffff, #dddddd);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; /* Add this for Safari/Chrome */
+  -webkit-text-fill-color: transparent; /* Add this for Safari/Chrome */
+  position: relative;
+  z-index: 1;
+  /* top: 0.3em; */
+  line-height: 1;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .sponsors-description {
-    line-height: 1.5em;
+  line-height: 1.5em;
 }
 
 .sponsorship-levels {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch; /* Make all boxes the same height */
-    justify-content: center;
-    gap: 2vmin;
-    margin-top: 2vmin;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; /* Make all boxes the same height */
+  justify-content: center;
+  gap: 2vmin;
+  margin-top: 2vmin;
+  flex-wrap: wrap;
 }
 
 .sponsorship-level {
-    flex: 1 1 280px;
-    min-width: 260px;
-    max-width: 340px;
-    min-height: 340px;
-    box-sizing: border-box;
-    margin: 1.5vmin;
-    padding: 2.5vmin 2vmin 2vmin 2vmin;
-    border-radius: 1.2em;
-    box-shadow: 0 4px 24px 0 #0002, 0 0 0 4px rgba(255,255,255,0.04) inset;
-    text-align: center;
-    background: rgba(255,255,255,0.08);
-    border: 2.5px solid transparent;
-    transition: box-shadow 0.2s, border-color 0.2s, transform 0.18s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+  flex: 1 1 280px;
+  min-width: 260px;
+  max-width: 340px;
+  min-height: 340px;
+  box-sizing: border-box;
+  margin: 1.5vmin;
+  padding: 2.5vmin 2vmin 2vmin 2vmin;
+  border-radius: 1.2em;
+  box-shadow:
+    0 4px 24px 0 #0002,
+    0 0 0 4px rgba(255, 255, 255, 0.04) inset;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 2.5px solid transparent;
+  transition:
+    box-shadow 0.2s,
+    border-color 0.2s,
+    transform 0.18s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .sponsorship-level.gold {
-    border-color: #e2aa39;
-    background: linear-gradient(to right, #ffe7b3, #feebbc, #feefc6, #fef2cf, #fef6d9, #fef6d9, #fef6d9, #fef6d9, #fef2cf, #feefc6, #feebbc, #ffe7b3);
+  border-color: #e2aa39;
+  background: linear-gradient(
+    to right,
+    #ffe7b3,
+    #feebbc,
+    #feefc6,
+    #fef2cf,
+    #fef6d9,
+    #fef6d9,
+    #fef6d9,
+    #fef6d9,
+    #fef2cf,
+    #feefc6,
+    #feebbc,
+    #ffe7b3
+  );
 }
 .sponsorship-level.silver {
-    border-color: #b0b0b0;
-    background: linear-gradient(to right, #e0e0e0, #e4e4e4, #e8e8e8, #ececec, #f0f0f0, #f0f0f0, #f0f0f0, #f0f0f0, #ececec, #e8e8e8, #e4e4e4, #e0e0e0);
+  border-color: #b0b0b0;
+  background: linear-gradient(
+    to right,
+    #e0e0e0,
+    #e4e4e4,
+    #e8e8e8,
+    #ececec,
+    #f0f0f0,
+    #f0f0f0,
+    #f0f0f0,
+    #f0f0f0,
+    #ececec,
+    #e8e8e8,
+    #e4e4e4,
+    #e0e0e0
+  );
 }
 .sponsorship-level.bronze {
-    border-color: #cd7f32;
-    background: linear-gradient(to right, #e3c7a1, #e8cead, #ecd5b9, #f0dcc6, #f4e3d2, #f4e3d2, #f4e3d2, #f4e3d2, #f0dcc6, #ecd5b9, #e8cead, #e3c7a1);
+  border-color: #cd7f32;
+  background: linear-gradient(
+    to right,
+    #e3c7a1,
+    #e8cead,
+    #ecd5b9,
+    #f0dcc6,
+    #f4e3d2,
+    #f4e3d2,
+    #f4e3d2,
+    #f4e3d2,
+    #f0dcc6,
+    #ecd5b9,
+    #e8cead,
+    #e3c7a1
+  );
 }
 
 .sponsorship-level:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 32px 0 #ffae26, 0 0 0 4px rgba(255,255,255,0.08) inset;
-    z-index: 2;
-    border-color: #ffae26;
+  transform: scale(1.03);
+  box-shadow:
+    0 8px 32px 0 #ffae26,
+    0 0 0 4px rgba(255, 255, 255, 0.08) inset;
+  z-index: 2;
+  border-color: #ffae26;
 }
 
 .sponsorship-level-title {
-    font-family: "Changa One", sans-serif;
-    font-size: 2em;
-    margin-bottom: 0.2em;
-    color: #222;
-    letter-spacing: 0.03em;
-    text-shadow: 0 2px 8px #fff6;
+  font-family: "Changa One", sans-serif;
+  font-size: 2em;
+  margin-bottom: 0.2em;
+  color: #222;
+  letter-spacing: 0.03em;
+  text-shadow: 0 2px 8px #fff6;
 }
 
 .sponsorship-level-price {
-    font-size: 1.3em;
-    font-weight: bold;
-    color: #ffae26;
-    margin-bottom: 0.7em;
-    letter-spacing: 0.02em;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #ffae26;
+  margin-bottom: 0.7em;
+  letter-spacing: 0.02em;
 }
 
 .sponsorship-level-description {
-    font-size: 1.08em;
-    color: #333;
-    line-height: 1.6;
-    margin: 0 auto;
-    padding: 0 0.5em;
-    text-align: left;              /* Make text align left for bullets */
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;           /* Center the whole list horizontally */
-    list-style: disc inside;       /* Bullets inside, next to text */
-    width: 100%;
-    max-width: 90%;
+  font-size: 1.08em;
+  color: #333;
+  line-height: 1.6;
+  margin: 0 auto;
+  padding: 0 0.5em;
+  text-align: left; /* Make text align left for bullets */
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center the whole list horizontally */
+  list-style: disc inside; /* Bullets inside, next to text */
+  width: 100%;
+  max-width: 90%;
 }
 
 .sponsorship-level-description li {
-    margin-bottom: 0.4em;
-    padding-left: 0.2em;
-    display: list-item;
-    text-align: center;              /* Ensure each li is left-aligned */
-    width: 100%;
+  margin-bottom: 0.4em;
+  padding-left: 0.2em;
+  display: list-item;
+  text-align: center; /* Ensure each li is left-aligned */
+  width: 100%;
 }
 
 .sponsor-email-button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin: 3vw auto 2vw auto;    /* Center horizontally with auto margins */
+  margin: 3vw auto 2vw auto; /* Center horizontally with auto margins */
   padding: 0.3em 0.8em;
   font-size: 3em;
   border-radius: 1em;
   background-image: linear-gradient(0.25turn, #e2aa39, #ffae26);
   background-clip: text;
   color: transparent !important;
-  box-shadow: 0 0 16px 0 #ffae26, inset 0 0 0 3px #ffae26;
+  box-shadow:
+    0 0 16px 0 #ffae26,
+    inset 0 0 0 3px #ffae26;
   font-family: "Changa One", sans-serif;
   font-weight: 700;
   cursor: pointer;
   text-align: center;
   min-width: 180px;
   max-width: 60vw;
-  transition: text 0.4s, background 0.4s, color 0.4s, box-shadow 0.4s;
+  transition:
+    text 0.4s,
+    background 0.4s,
+    color 0.4s,
+    box-shadow 0.4s;
   text-decoration: none;
 }
-
 
 .sponsor-email-button:hover,
 .sponsor-email-button:focus {
   background: linear-gradient(0.25turn, #ffae26, #e2aa39);
   color: #131313 !important;
   box-shadow: 0 4px 24px #ffae26;
-  transition: text 0.4s, background 0.4s, color 0.4s, box-shadow 0.4s;
+  transition:
+    text 0.4s,
+    background 0.4s,
+    color 0.4s,
+    box-shadow 0.4s;
   text-decoration: none;
 }
 
 /* Responsive tweaks */
 @media (max-width: 900px) {
-    .sponsorship-levels {
-        flex-direction: column;
-        align-items: center;
-    }
-    .sponsorship-level {
-        min-width: 220px;
-        max-width: 98vw;
-        width: 90vw;
-        min-height: 0;
-    }
+  .sponsorship-levels {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sponsorship-level {
+    min-width: 220px;
+    max-width: 98vw;
+    width: 90vw;
+    min-height: 0;
+  }
 }
