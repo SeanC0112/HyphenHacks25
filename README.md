@@ -1,5 +1,7 @@
 # Hyphen-Hacks 25
 
+<img width="1434" height="751" alt="Screenshot 2026-05-03 at 2 44 14 AM" src="https://github.com/user-attachments/assets/80201693-6330-43c4-9f74-88d181b6d0e9" />
+
 ## Description
 
 Hyphen-Hacks Website <br />
