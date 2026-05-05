@@ -1,8 +1,15 @@
 # Hyphen-Hacks 25
 
+## Description
+
 Hyphen-Hacks Website <br />
 Built with react <br />
-my first website not built at a hackathon
+my first website not built at a hackathon <br />
+meant to promote my school's annual hackathon
+
+## Instructions
+
+Just open up [https://www.hyphen-hacks.com/](https://www.hyphen-hacks.com/) and view it
 
 ## Motivation
 
