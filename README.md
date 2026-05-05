@@ -11,6 +11,10 @@ meant to promote my school's annual hackathon
 
 Just open up [https://www.hyphen-hacks.com/](https://www.hyphen-hacks.com/) and view it
 
+## Technologies
+
+Built in Javascript and CSS with a little HTML using the React framework
+
 ## Motivation
 
 I wanted to design an aesthetically pleasing site to spread awareness of my school's hackathon and bring participants to the sign up as well as appear professional to sponsors.
