@@ -26,29 +26,23 @@ const OrganizersData = [
   {
     name: "Sean Coleman",
     image: "/sean.JPG",
-    title: "Executive Director and Software Lead",
-    linkedin: "https://www.linkedin.com/in/sean-coleman-4731a5359/",
+    title: "Executive Director",
+    // linkedin: "https://www.linkedin.com/in/sean-coleman-4731a5359/",
   },
   {
     name: "Eddie Binetti",
     image: "/eddie.png",
-    title: "Outreach Lead and Graphic Designer",
+    title: "Outreach Lead",
   },
   {
     name: "Noah Ahn",
     image: "/noah.jpg",
-    title: "Community Engagement Lead",
+    // title: "Community Engagement Lead",
   },
   {
     name: "Aurora Huang",
     image: "/aurora.jpg",
-    title: "Logistics Lead",
-  },
-  {
-    name: "Sloane Marciniak-Velazco",
-    image: "/sloane.jpeg",
-    title: "Corporate Relations Lead",
-    linkedin: "https://www.linkedin.com/in/sloane-m-1740a32ba/",
+    // title: "Logistics Lead",
   },
 ];
 
