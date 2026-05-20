@@ -86,7 +86,7 @@ function App() {
             <h1 className="App-title-bottom">Hacks</h1>
             <div className="App-intro-footer">
               <span className="App-intro-footer-left">
-                September 27th, 2025
+                September 26th, 2026
               </span>
               <a
                 href="https://www.google.com/maps/place/Lick+Wilmerding+High+School/@37.7227779,-122.4518189,17z/data=!3m1!4b1!4m6!3m5!1s0x808f7c2a56b75bb5:0x72b2d521bc242bb4!8m2!3d37.7227779!4d-122.449244!16zL20vMDZicHpi?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D"
