@@ -121,7 +121,7 @@ function App() {
             <span className="footer-left">
               Made with ❤️ by the Hyphen-Hacks Team
             </span>
-            <span className="footer-right">© 2025 Hyphen-Hacks</span>
+            <span className="footer-right">© 2026 Hyphen-Hacks</span>
           </div>
         </>
       ) : (
