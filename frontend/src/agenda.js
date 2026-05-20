@@ -59,7 +59,7 @@ const Items = [
 
 const Agenda = React.forwardRef((props, ref) => (
   <div className="agenda" ref={ref}>
-    <h1 className="agenda-header">Agenda</h1>
+    <h1 className="agenda-header"> Potential Agenda</h1>
     <div className="agenda-list">
       {Items.map((item, index) => (
         <AgendaItem key={index} item={item} />
