@@ -165,7 +165,7 @@ const Sponsors = forwardRef((props, ref) => {
         </div>
       </div>
       <a
-        href="https://forms.gle/Q9Wb4hYCySFpRYqB7"
+        href="https://forms.gle/EifxA3Hyb1eWW12H8"
         target="_blank"
         rel="noopener noreferrer"
         className="sponsor-email-button">
