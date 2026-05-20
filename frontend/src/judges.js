@@ -37,7 +37,8 @@ const Judges = React.forwardRef((props, ref) => (
         <JudgeItem key={index} item={item} />
       ))}
     </div>
-    <div className="judges-footer">
+    {/*TODO update form for later*/}
+    {/* <div className="judges-footer">
       <p className="judges-footer-text">
         Interested in being a judge?{" "}
         <a
@@ -47,7 +48,7 @@ const Judges = React.forwardRef((props, ref) => (
           Sign up here!
         </a>
       </p>
-    </div>
+    </div> */}
   </div>
 ));
 
