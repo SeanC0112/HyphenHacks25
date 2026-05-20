@@ -55,14 +55,14 @@ function SponsorCardBronze({ sponsor }) {
 }
 
 const SponsorData = [
-  {
-    name: "Art of Problem Solving",
-    tier: "Silver",
-    logo: "aops.png",
-    description:
-      "Training Today's Brightest Minds to Solve Tomorrow's Problems. Art of Problem Solving creates educational materials for motivated students in grades 1–12. Their books, classes, and online resources help students become creative, successful problem solvers.",
-    link: "https://artofproblemsolving.com/company",
-  },
+  // {
+  //   name: "Art of Problem Solving",
+  //   tier: "Silver",
+  //   logo: "aops.png",
+  //   description:
+  //     "Training Today's Brightest Minds to Solve Tomorrow's Problems. Art of Problem Solving creates educational materials for motivated students in grades 1–12. Their books, classes, and online resources help students become creative, successful problem solvers.",
+  //   link: "https://artofproblemsolving.com/company",
+  // },
 ];
 
 const Sponsors = forwardRef((props, ref) => {
