@@ -21,12 +21,12 @@ const JudgesData = [
     bio: "Building video models at LMArena. Previous SWE at Discord. LWHS Class of '24!",
     linkedin: "https://www.linkedin.com/in/thijsdev/",
   },
-  // {
-  //   name: "Nena Bains,",
-  //   image: "/nena.jpg",
-  //   bio: "Patent attorney working with start ups for the last 25 years, including new technoloiges from UCSF and Stanford incubators.  Technical experience in all things mechancial, electrical, and software/AI as it relates to the human body and a deep bench in financing diligence.",
-  //   linkedin: "https://www.linkedin.com/in/nena-bains-jd-90879/",
-  // },
+  {
+    name: "Disha Patel,",
+    image: "/dishapatel.png",
+    bio: "Disha Patel is a Software Engineer at Apple and published ML researcher focused on lightweight model deployment for resource-constrained environments.",
+    linkedin: "https://www.linkedin.com/in/diisha-patel/",
+  },
 ];
 
 const Judges = React.forwardRef((props, ref) => (
