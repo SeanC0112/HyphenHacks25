@@ -37,12 +37,22 @@ const OrganizersData = [
   {
     name: "Noah Ahn",
     image: "/noah.jpg",
-    // title: "Community Engagement Lead",
+    title: "Community Engagement Lead",
   },
   {
     name: "Aurora Huang",
     image: "/aurora.jpg",
     // title: "Logistics Lead",
+  },
+  {
+    name: "Lucy Jameson",
+    image: "/lucy.jpg",
+    title: "Logistics Lead",
+  },
+  {
+    name: "Raya Moutafov",
+    image: "/raya.jpg",
+    title: "Design Lead",
   },
 ];
 
