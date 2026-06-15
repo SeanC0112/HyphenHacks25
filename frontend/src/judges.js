@@ -22,7 +22,7 @@ const JudgesData = [
     linkedin: "https://www.linkedin.com/in/thijsdev/",
   },
   {
-    name: "Disha Patel,",
+    name: "Disha Patel",
     image: "/dishapatel.png",
     bio: "Disha Patel is a Software Engineer at Apple and published ML researcher focused on lightweight model deployment for resource-constrained environments.",
     linkedin: "https://www.linkedin.com/in/diisha-patel/",
