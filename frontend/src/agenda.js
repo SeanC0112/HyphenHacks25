@@ -44,15 +44,15 @@ const Items = [
     title: "Dinner",
   },
   {
-    time: "9:00 PM",
+    time: "7:00 PM",
     title: "Presentations and Judging",
   },
   {
-    time: "10:30 PM",
+    time: "8:30 PM",
     title: "Closing Ceremony",
   },
   {
-    time: "11:00 PM",
+    time: "9:00 PM",
     title: "Departure",
   },
 ];
