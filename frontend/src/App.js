@@ -96,16 +96,7 @@ function App() {
                   rel="noopener noreferrer"
                   // style={{ marginRight: "2rem" }}
                 >
-                  <FaDiscord
-                    style={{
-                      color: "#ffae26",
-                      filter: "drop-shadow(0 0 1.5vh #e4a039)",
-                      fontSize: "1.5em",
-                      marginRight: "0.9rem",
-                      position: "relative",
-                      top: "0.8rem",
-                    }}
-                  />
+                  <FaDiscord className="App-intro-footer-right-discord" />
                 </a>
                 <a
                   href="https://www.google.com/maps/place/Lick+Wilmerding+High+School/@37.7227779,-122.4518189,17z/data=!3m1!4b1!4m6!3m5!1s0x808f7c2a56b75bb5:0x72b2d521bc242bb4!8m2!3d37.7227779!4d-122.449244!16zL20vMDZicHpi?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D"
