@@ -31,8 +31,8 @@ function SponsorCardSilver({ sponsor }) {
         alt={`${sponsor.name} logo`}
         className="sponsor-logo"
       />
-      {/* <p className="sponsor-title">{sponsor.name}</p> */}
-      <p className="sponsor-description">{sponsor.description}</p>
+      <p className="sponsor-title">{sponsor.name}</p>
+      {/* <p className="sponsor-description">{sponsor.description}</p> */}
     </a>
   );
 }
@@ -62,6 +62,14 @@ const SponsorData = [
     // description:
     //   "Training Today's Brightest Minds to Solve Tomorrow's Problems. Art of Problem Solving creates educational materials for motivated students in grades 1–12. Their books, classes, and online resources help students become creative, successful problem solvers.",
     link: "https://www.wolfram.com/",
+  },
+  {
+    name: "PCBWay",
+    tier: "Silver",
+    logo: "PCBWay.png",
+    // description:
+    //   "Training Today's Brightest Minds to Solve Tomorrow's Problems. Art of Problem Solving creates educational materials for motivated students in grades 1–12. Their books, classes, and online resources help students become creative, successful problem solvers.",
+    link: "https://www.pcbway.com/",
   },
 ];
 
