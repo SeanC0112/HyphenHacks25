@@ -33,6 +33,12 @@ const JudgesData = [
     bio: "Lead PM at Google (Devices & Services) — supply chain & logistics architecture behind Google's flagship retail stores. Previously Walmart Technology. MS in Supply Chain Management.",
     linkedin: "https://www.linkedin.com/in/swostipanda/",
   },
+  {
+    name: "Preyansh Shah",
+    image: "/shah.png",
+    bio: "Senior Engineering Manager at Cisco — AI platform engineering, performance, observability, and developer tools behind production-scale enterprise systems. Previously Palo Alto Networks and F5. MBA, UIUC; MS, San Jose State. Inventor on a cited U.S. patent.",
+    linkedin: "https://www.linkedin.com/in/preyanshshah/",
+  },
 ];
 
 const Judges = React.forwardRef((props, ref) => (
