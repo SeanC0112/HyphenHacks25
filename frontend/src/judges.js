@@ -34,6 +34,12 @@ const JudgesData = [
     linkedin: "https://www.linkedin.com/in/swostipanda/",
   },
   {
+    name: "Daniel Sam Pete Thiyagu",
+    image: "/daniel.jpeg",
+    bio: "Software engineer focused on recommendation systems, LLM infrastructure, prompt optimization, content understanding, and building scalable ML products.",
+    linkedin: "https://www.linkedin.com/in/danielsampete/",
+  },
+  {
     name: "Preyansh Shah",
     image: "/shah.png",
     bio: "Senior Engineering Manager at Cisco — AI platform engineering, performance, observability, and developer tools behind production-scale enterprise systems. Previously Palo Alto Networks and F5. MBA, UIUC; MS, San Jose State. Inventor on a cited U.S. patent.",
