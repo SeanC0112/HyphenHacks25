@@ -45,6 +45,12 @@ const JudgesData = [
     bio: "Senior Engineering Manager at Cisco — AI platform engineering, performance, observability, and developer tools behind production-scale enterprise systems. Previously Palo Alto Networks and F5. MBA, UIUC; MS, San Jose State. Inventor on a cited U.S. patent.",
     linkedin: "https://www.linkedin.com/in/preyanshshah/",
   },
+  {
+    name: "Anagha Todalbagi",
+    image: "Anagha.jpg",
+    bio: "Anagha Todalbagi is a Product Manager at Microsoft, where she builds AI and data platform products. With over 12 years of experience across engineering and product leadership, she’s passionate about helping teams build products that solve real customer problems and enjoys mentoring the next generation of builders and entrepreneurs",
+    linkedin: "https://www.linkedin.com/in/anaghatodalbagi",
+  },
 ];
 
 const Judges = React.forwardRef((props, ref) => (
