@@ -48,7 +48,7 @@ const JudgesData = [
   {
     name: "Anagha Todalbagi",
     image: "Anagha.jpg",
-    bio: "Anagha Todalbagi is a Product Manager at Microsoft, where she builds AI and data platform products. With over 12 years of experience across engineering and product leadership, she’s passionate about helping teams build products that solve real customer problems and enjoys mentoring the next generation of builders and entrepreneurs",
+    bio: "Product Manager at Microsoft, building AI and data platform products. 12+ years of experience across engineering and product leadership. Passionate about mentoring the next generation of builders and entrepreneurs to create products that solve real customer problems.",
     linkedin: "https://www.linkedin.com/in/anaghatodalbagi",
   },
 ];
