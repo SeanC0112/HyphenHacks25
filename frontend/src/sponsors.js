@@ -71,6 +71,14 @@ const SponsorData = [
     //   "Training Today's Brightest Minds to Solve Tomorrow's Problems. Art of Problem Solving creates educational materials for motivated students in grades 1–12. Their books, classes, and online resources help students become creative, successful problem solvers.",
     link: "https://www.pcbway.com/",
   },
+  {
+    name: "Algoverse",
+    tier: "Silver",
+    logo: "Algoverse.jpg",
+    // description:
+    //   "Training Today's Brightest Minds to Solve Tomorrow's Problems. Art of Problem Solving creates educational materials for motivated students in grades 1–12. Their books, classes, and online resources help students become creative, successful problem solvers.",
+    link: "https://algoverseairesearch.org/",
+  },
 ];
 
 const Sponsors = forwardRef((props, ref) => {
