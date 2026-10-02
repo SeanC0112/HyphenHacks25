@@ -13,7 +13,7 @@ function AgendaItem({ item }) {
 const Items = [
   {
     time: "8:30 AM",
-    title: "Arrival",
+    title: "Arrival + Breakfast",
   },
   {
     time: "9:00 AM",
