@@ -64,6 +64,14 @@ const SponsorData = [
     link: "https://www.wolfram.com/",
   },
   {
+    name: "Le Trianon",
+    tier: "Bronze",
+    logo: "letri.png",
+    // description:
+    //   "Training Today's Brightest Minds to Solve Tomorrow's Problems. Art of Problem Solving creates educational materials for motivated students in grades 1–12. Their books, classes, and online resources help students become creative, successful problem solvers.",
+    link: "https://www.letrianonantiques.com/",
+  },
+  {
     name: "PCBWay",
     tier: "Silver",
     logo: "PCBway.png",
