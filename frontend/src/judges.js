@@ -45,6 +45,12 @@ const JudgesData = [
     bio: "Product Manager at Microsoft, building AI and data platform products. 12+ years of experience across engineering and product leadership. Passionate about mentoring the next generation of builders and entrepreneurs to create products that solve real customer problems.",
     linkedin: "https://www.linkedin.com/in/anaghatodalbagi",
   },
+  {
+    name: "Aman Sharma",
+    image: "aman.png",
+    bio: "BI Engineer at Elekta, Building B2B Deal Intelligence at Girard AI. Passionate about Workflow Automation, LLM infrastructure, Multiplayer AI and ML. MS Business Analytics from UCSD.",
+    linkedin: "https://www.linkedin.com/in/aman2139/",
+  },
 ];
 
 const Judges = React.forwardRef((props, ref) => (
