@@ -22,12 +22,6 @@ const JudgesData = [
     linkedin: "https://www.linkedin.com/in/thijsdev/",
   },
   {
-    name: "Disha Patel",
-    image: "/dishapatel.png",
-    bio: "Disha Patel is a Software Engineer at Apple and published ML researcher focused on lightweight model deployment for resource-constrained environments.",
-    linkedin: "https://www.linkedin.com/in/diisha-patel/",
-  },
-  {
     name: "Swosti Panda",
     image: "/swosti_panda.jpeg",
     bio: "Lead PM at Google (Devices & Services) — supply chain & logistics architecture behind Google's flagship retail stores. Previously Walmart Technology. MS in Supply Chain Management.",
